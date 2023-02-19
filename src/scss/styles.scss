@@ -1,2 +1,6 @@
 // Import all of Bootstrap's CSS
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
+
+.header {
+  background: linear-gradient(180deg, #005596 0%, rgba(0, 85, 150, 0.8) 100%);
+}
