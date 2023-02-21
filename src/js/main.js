@@ -6,21 +6,21 @@ import '../scss/styles.scss';
 
 // Карусель
 const carousel = document.querySelector('.carousel__container');
-const list = carousel.querySelector('ul');
-const listElems = carousel.querySelectorAll('li');
+const list = carousel.querySelector('.carousel__galery-list');
+const listElems = carousel.querySelectorAll('.carousel__galery-item');
 const prevButton = carousel.querySelector('.carousel__btn-prev');
 const nextButton = carousel.querySelector('.carousel__btn-next');
 
 // этот код помечает картинки, для удобства разработки
-let i = 1;
-for (let li of carousel.querySelectorAll('li')) {
-  li.style.position = 'relative';
-  li.insertAdjacentHTML(
-    'beforeend',
-    `<span style="position:absolute;left:0;top:0">${i}</span>`
-  );
-  i++;
-}
+// let i = 1;
+// for (let li of carousel.querySelectorAll('li')) {
+//   li.style.position = 'relative';
+//   li.insertAdjacentHTML(
+//     'beforeend',
+//     `<span style="position:absolute;left:0;top:0">${i}</span>`
+//   );
+//   i++;
+// }
 
 // конфигурация
 let width = 244; // ширина картинки
@@ -53,4 +53,4 @@ function autoSlide() {
   list.style.marginLeft = position + 'px';
 }
 
-setInterval(autoSlide, 5000);
+setInterval(autoSlide, 6000);
