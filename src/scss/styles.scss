@@ -871,6 +871,11 @@
   position: absolute;
   top: 2px;
   left: 3px;
+  transition: left 250ms;
+}
+
+.menu__lang-switch-front_right {
+  left: 35px;
 }
 
 .menu__lang {
@@ -886,6 +891,15 @@
   margin: 0;
   padding: 0;
   color: #005596;
+}
+
+.menu__lang:before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -9px;
+  width: 35px;
+  height: 29px;
 }
 
 .menu__lang_active {
