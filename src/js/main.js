@@ -28,13 +28,27 @@ const menuEnLang = document.querySelector('.menu__lang-en');
 // }
 
 // конфигурация карусели
+// видимое количество изображений
+const count = (windowSize) => {
+  if (windowSize > 1050) {
+    return 4;
+  }
+  if (windowSize <= 1050 && windowSize > 750) {
+    return 3;
+  }
+  if (windowSize <= 750 && windowSize > 650) {
+    return 2;
+  } else {
+    return 1;
+  }
+};
+
 let width = 244; // ширина картинки
-let count = 4; // видимое количество изображений
 let position = 0; // положение ленты прокрутки
 
 function slideToPrev() {
   // сдвиг влево
-  position += width * count;
+  position += width * count(window.innerWidth);
   // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
   position = Math.min(position, 0);
   list.style.marginLeft = position + 'px';
@@ -42,19 +56,25 @@ function slideToPrev() {
 
 function slideToNext() {
   // сдвиг вправо
-  position -= width * count;
+  position -= width * count(window.innerWidth);
   // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-  position = Math.max(position, -width * (listElems.length - count));
+  position = Math.max(
+    position,
+    -width * (listElems.length - count(window.innerWidth))
+  );
   list.style.marginLeft = position + 'px';
 }
 
 // автоматическая прокрутка
 function autoSlide() {
-  if (position === -width * (listElems.length - count)) {
-    position = width * count;
+  if (position === -width * (listElems.length - count(window.innerWidth))) {
+    position = width * count(window.innerWidth);
   }
-  position -= width * count;
-  position = Math.max(position, -width * (listElems.length - count));
+  position -= width * count(window.innerWidth);
+  position = Math.max(
+    position,
+    -width * (listElems.length - count(window.innerWidth))
+  );
   list.style.marginLeft = position + 'px';
 }
 
@@ -93,22 +113,3 @@ menuOpenButton.addEventListener('click', openMenu);
 menuCloseButton.addEventListener('click', closeMenu);
 menuRuLang.addEventListener('click', switchToRussian);
 menuEnLang.addEventListener('click', switchToEnglish);
-
-// // Прячу или показываю элементы меню в зависимости от ширины окна
-// function showOrHideMenu(windowSize) {
-//   if (windowSize <= 1200) {
-//     navigationLargeScreen && navigationLargeScreen.remove();
-//     headerLinksLargeScreen && headerLinksLargeScreen.remove();
-//     headerContainer.insertAdjacentElement('beforeend', menuOpenButton);
-//   } else {
-//     headerContainer.insertAdjacentElement('beforeend', navigationLargeScreen);
-//     headerContainer.insertAdjacentElement('beforeend', headerLinksLargeScreen);
-//     menuOpenButton && menuOpenButton.remove();
-//   }
-// }
-
-// showOrHideMenu(window.innerWidth);
-
-// function handleResize() {
-//   showOrHideMenu(window.innerWidth);
-// }
