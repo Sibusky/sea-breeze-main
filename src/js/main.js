@@ -1,10 +1,7 @@
-// Import our custom CSS
 import '../scss/styles.scss';
 
-// Import all of Bootstrap's JS
-// import * as bootstrap from 'bootstrap';
-
 // Карусель
+
 const carousel = document.querySelector('.carousel__container');
 const list = carousel.querySelector('.carousel__galery-list');
 const listElems = carousel.querySelectorAll('.carousel__galery-item');
@@ -54,3 +51,37 @@ function autoSlide() {
 }
 
 setInterval(autoSlide, 6000);
+
+// Меню
+
+const headerContainer = document.querySelector('.header__container');
+const navigationLargeScreen = headerContainer.querySelector(
+  '.header__phone-number-and-navigation'
+);
+const headerLinksLargeScreen = headerContainer.querySelector(
+  '.header__youtube-and-lang-switch'
+);
+const menuOpenButton = headerContainer.querySelector(
+  '.header__open-menu-button'
+);
+
+// Прячу или показываю элементы меню в зависимости от ширины окна
+function showOrHideMenu(windowSize) {
+  if (windowSize <= 1200) {
+    navigationLargeScreen.remove();
+    headerLinksLargeScreen.remove();
+    headerContainer.insertAdjacentElement('beforeend', menuOpenButton);
+  } else {
+    headerContainer.insertAdjacentElement('beforeend', navigationLargeScreen);
+    headerContainer.insertAdjacentElement('beforeend', headerLinksLargeScreen);
+    menuOpenButton.remove();
+  }
+}
+
+showOrHideMenu(window.innerWidth);
+
+function handleResize() {
+  showOrHideMenu(window.innerWidth);
+}
+
+window.addEventListener('resize', handleResize);
