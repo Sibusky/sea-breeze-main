@@ -1,4 +1,4 @@
-import '../scss/styles.scss';
+import '../scss/index.scss';
 
 // Карусель
 const carousel = document.querySelector('.carousel__container');

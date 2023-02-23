@@ -6,16 +6,31 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); // плагин html
 
 module.exports = {
   target: 'web',
-  entry: './src/js/main.js',
+  entry: {
+    index: './src/js/index.js',
+    about: './src/js/about.js',
+    products: './src/js/products.js',
+    blog: './src/js/blog.js',
+    contacts: './src/js/contacts.js',
+  },
+  optimization: {
+    splitChunks: {
+      // extract shared dependencies from entry bundles:
+      chunks: 'all',
+      // allow any size dependency to be shared:
+      // minSize: 0,
+    },
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
+    chunkFilename: "[name].chunk.js",
     path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development', // включаем режим разработчика
   devServer: {
     static: path.resolve(__dirname, 'dist'),
     port: 5500,
-    hot: true,
+    hot: true, // горячая перезагрузка
     open: true, // сайт будет открываться cам при запуске
     compress: true, // ускоряет работу в режиме разработки
   },
@@ -65,8 +80,29 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      // класс плагина html
-      template: './src/index.html',
+      filename: 'index.html',
+      template: './src/pages/index.html',
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: './src/pages/about.html',
+      chunks: ['about'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'products.html',
+      template: './src/pages/products.html',
+      chunks: ['products'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'blog.html',
+      template: './src/pages/blog.html',
+      chunks: ['blog'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'contacts.html',
+      template: './src/pages/contacts.html',
+      chunks: ['contacts'],
     }),
     new CleanWebpackPlugin(), // класс плагина для чистки dist
     new MiniCssExtractPlugin(), // подключение плагина для объединения файлов
