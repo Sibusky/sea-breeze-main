@@ -1,0 +1,8 @@
+.assortment__item-piers {
+  grid-row: 2 / 4;
+}
+@media screen and (max-width: 860px) {
+    .assortment__item-piers {
+        grid-row: 2 / 3;
+      }
+}

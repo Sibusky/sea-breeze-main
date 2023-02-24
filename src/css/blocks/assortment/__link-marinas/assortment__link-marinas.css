@@ -1,0 +1,7 @@
+.assortment__link-marinas::before {
+  background: linear-gradient(
+    159.68deg,
+    #005596 7.46%,
+    rgba(0, 85, 150, 0) 75.29%
+  );
+}

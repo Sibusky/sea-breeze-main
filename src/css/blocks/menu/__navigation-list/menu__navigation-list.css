@@ -1,0 +1,14 @@
+.menu__navigation-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 735px) {
+    .menu__navigation-list {
+        flex-direction: column;
+      }
+}

@@ -1,0 +1,13 @@
+.menu__youtube-link-large {
+  position: absolute;
+  display: none;
+}
+@media screen and (max-width: 735px) {
+    .menu__youtube-link-large {
+        position: relative;
+        display: block;
+        margin: 108px 0 0 0;
+        width: 108px;
+        height: 24px;
+      }
+}

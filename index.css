@@ -1,10 +1,6 @@
-// Import all of Bootstrap's CSS
-// @import '~bootstrap/scss/bootstrap';
-
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 
-// Общие стили
 .link {
   text-decoration: none;
   cursor: pointer;
@@ -28,7 +24,6 @@
   opacity: 0.7;
 }
 
-// Page
 .page {
   display: flex;
   flex-direction: column;
@@ -40,8 +35,6 @@
   margin: 0;
   padding: 0;
 }
-
-// Header
 
 .header {
   display: flex;
@@ -221,14 +214,17 @@
   transition: fill ease-in-out 0.3s;
 }
 
-.youtube-logo:hover {
-  .youtube-logo-path-to-red {
-    fill: #ff0000;
-  }
+.youtube-logo {
+  width: fit-content;
+  height: fit-content;
+}
 
-  .youtube-logo-path-to-black {
-    fill: #000;
-  }
+.youtube-logo:hover .youtube-logo-path-to-red {
+  fill: #ff0000;
+}
+
+.youtube-logo:hover .youtube-logo-path-to-black {
+  fill: #000;
 }
 
 .header__lang-switch {
@@ -269,8 +265,6 @@
   }
 }
 
-// Main
-
 .main {
   display: flex;
   flex-direction: column;
@@ -279,8 +273,6 @@
   width: 100%;
   position: relative;
 }
-
-// Assortment
 
 .assortment {
   display: flex;
@@ -698,8 +690,6 @@
   right: 0;
 }
 
-// Footer
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -961,8 +951,6 @@
     display: none;
   }
 }
-
-// Menu
 
 .menu {
   height: 100vh;
@@ -1298,4 +1286,3 @@
     margin: 48px 0 0 0;
   }
 }
-

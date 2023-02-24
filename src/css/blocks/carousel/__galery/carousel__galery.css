@@ -1,0 +1,24 @@
+.carousel__galery {
+  width: 958px;
+  height: fit-content;
+  overflow-y: overlay;
+}
+@media screen and (max-width: 1050px) {
+    .carousel__galery {
+        width: 713px;
+      }
+}
+@media screen and (max-width: 750px) {
+    .carousel__galery {
+        width: 472px;
+      }
+}
+@media screen and (max-width: 650px) {
+    .carousel__galery {
+        width: 100%;
+      }
+}
+.carousel__galery::-webkit-scrollbar {
+  height: 0;
+  visibility: hidden;
+}

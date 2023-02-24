@@ -1,0 +1,17 @@
+.menu__navigation-item {
+  padding: 0;
+  margin: 0 24px 0 0;
+}
+@media screen and (max-width: 860px) {
+    .menu__navigation-item {
+        margin: 0 16px 0 0;
+      }
+}
+@media screen and (max-width: 735px) {
+    .menu__navigation-item {
+        margin: 0 0 32px 0;
+      }
+}
+.menu__navigation-item:last-of-type {
+  margin: 0;
+}

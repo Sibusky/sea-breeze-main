@@ -1,0 +1,19 @@
+.carousel__btn {
+  position: absolute;
+  top: 15px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+@media (pointer: coarse) {
+    .carousel__btn {
+        display: none;
+      }
+}
+.carousel__btn:focus {
+  outline: none;
+}

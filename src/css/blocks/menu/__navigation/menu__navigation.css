@@ -1,0 +1,20 @@
+.menu__navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+@media screen and (max-width: 860px) {
+    .menu__navigation {
+        justify-content: center;
+        width: 100%;
+      }
+}
+@media screen and (max-width: 735px) {
+    .menu__navigation {
+        margin: 48px 0 0 0;
+        width: 80%;
+      }
+}

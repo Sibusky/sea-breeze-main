@@ -1,0 +1,13 @@
+.carousel__galery-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+}

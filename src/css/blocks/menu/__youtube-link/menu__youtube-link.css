@@ -1,0 +1,9 @@
+.menu__youtube-link {
+  display: block;
+}
+@media screen and (max-width: 735px) {
+    .menu__youtube-link {
+        position: absolute;
+        display: none;
+      }
+}

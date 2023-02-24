@@ -1,0 +1,8 @@
+.assortment__item-cranes {
+  grid-column: 1 / 3;
+}
+@media screen and (max-width: 860px) {
+    .assortment__item-cranes {
+        grid-column: 1 / 2;
+      }
+}

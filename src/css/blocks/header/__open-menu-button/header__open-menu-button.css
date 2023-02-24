@@ -1,0 +1,11 @@
+.header__open-menu-button {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+    .header__open-menu-button {
+        display: block;
+      }
+}
