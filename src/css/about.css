@@ -1,0 +1,318 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+@import url(./blocks/link/link.css);
+@import url(./blocks/button/button.css);
+@import url(./blocks/page/page.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__container/header__container.css);
+@import url(./blocks/header/__logo-container/header__logo-container.css);
+@import url(./blocks/header/__logo-text/header__logo-text.css);
+@import url(./blocks/header/__phone-number-and-navigation/header__phone-number-and-navigation.css);
+@import url(./blocks/header/__phone-number/header__phone-number.css);
+@import url(./blocks/header/__navigation/header__navigation.css);
+@import url(./blocks/header/__navigation-list/header__navigation-list.css);
+@import url(./blocks/header/__navigation-item/header__navigation-item.css);
+@import url(./blocks/header/__navigation-item-link/header__navigation-item-link.css);
+@import url(./blocks/header/__navigation-item-link/_active/header__navigation-item-link_active.css);
+@import url(./blocks/header/__youtube-and-lang-switch/header__youtube-and-lang-switch.css);
+@import url(./blocks/youtube-link/youtube-link.css);
+@import url(./blocks/youtube-logo-path/youtube-logo-path.css);
+@import url(./blocks/youtube-logo/youtube-logo.css);
+@import url(./blocks/header/__lang-switch/header__lang-switch.css);
+@import url(./blocks/header/__lang/header__lang.css);
+@import url(./blocks/header/__lang/_active/header__lang_active.css);
+@import url(./blocks/header/__open-menu-button/header__open-menu-button.css);
+@import url(./blocks/main/main.css);
+
+@import url(./blocks/carousel/carousel.css);
+@import url(./blocks/carousel/__container/carousel__container.css);
+@import url(./blocks/carousel/__btn/carousel__btn.css);
+@import url(./blocks/carousel/__btn-prev/carousel__btn-prev.css);
+@import url(./blocks/carousel/__galery/carousel__galery.css);
+@import url(./blocks/carousel/__galery-list/carousel__galery-list.css);
+@import url(./blocks/carousel/__galery-item/carousel__galery-item.css);
+@import url(./blocks/carousel/__galery-item-link/carousel__galery-item-link.css);
+@import url(./blocks/carousel/__galery-logo/carousel__galery-logo.css);
+@import url(./blocks/carousel/__btn-next/carousel__btn-next.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__container/footer__container.css);
+@import url(./blocks/footer/__logo/footer__logo.css);
+@import url(./blocks/footer/__text-container/footer__text-container.css);
+@import url(./blocks/footer/__navigation/footer__navigation.css);
+@import url(./blocks/footer/__navigation-list/footer__navigation-list.css);
+@import url(./blocks/footer/__navigation-item/footer__navigation-item.css);
+@import url(./blocks/footer/__navigation-item-link/footer__navigation-item-link.css);
+@import url(./blocks/footer/__adress/footer__adress.css);
+@import url(./blocks/footer/__adress-post/footer__adress-post.css);
+@import url(./blocks/footer/__adress-phone/footer__adress-phone.css);
+@import url(./blocks/footer/__copyright-and-external-links/footer__copyright-and-external-links.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+@import url(./blocks/footer/__youtube-link/footer__youtube-link.css);
+@import url(./blocks/menu/menu.css);
+@import url(./blocks/menu/_opened/menu_opened.css);
+@import url(./blocks/menu/__container/menu__container.css);
+@import url(./blocks/menu/__container/_opened/menu__container_opened.css);
+@import url(./blocks/menu/__top/menu__top.css);
+@import url(./blocks/menu/__logo-container/menu__logo-container.css);
+@import url(./blocks/menu/__logo-img/menu__logo-img.css);
+@import url(./blocks/menu/__logo-text/menu__logo-text.css);
+@import url(./blocks/menu/__top-right/menu__top-right.css);
+@import url(./blocks/menu/__phone/menu__phone.css);
+@import url(./blocks/menu/__youtube-link/menu__youtube-link.css);
+@import url(./blocks/menu/__lang-switch/menu__lang-switch.css);
+@import url(./blocks/menu/__lang-switch-front/menu__lang-switch-front.css);
+@import url(./blocks/menu/__lang-switch-front/_right/menu__lang-switch-front_right.css);
+@import url(./blocks/menu/__lang/menu__lang.css);
+@import url(./blocks/menu/__lang/_active/menu__lang_active.css);
+@import url(./blocks/menu/__close-btn/menu__close-btn.css);
+@import url(./blocks/menu/__navigation/menu__navigation.css);
+@import url(./blocks/menu/__navigation-list/menu__navigation-list.css);
+@import url(./blocks/menu/__navigation-item/menu__navigation-item.css);
+@import url(./blocks/menu/__navigation-btn/menu__navigation-btn.css);
+@import url(./blocks/menu/__youtube-link-large/menu__youtube-link-large.css);
+@import url(./blocks/menu/__youtube-logo-large/menu__youtube-logo-large.css);
+@import url(./blocks/menu/__copyright/menu__copyright.css);
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.about__background {
+  background: url('../../src/images/luxury-yacht-model.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 675px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 650px) {
+  .about__background {
+    display: none;
+  }
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc((1120 / 1440) * 100%);
+}
+@media screen and (max-width: 1300px) {
+  .about__container {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__container {
+    width: calc((1069 / 1133) * 100%);
+  }
+}
+@media screen and (max-width: 650px) {
+  .about__container {
+    width: 95%;
+  }
+}
+
+.about__title {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 32px 0 0 0;
+  padding: 0;
+  color: #005596;
+}
+
+@media screen and (max-width: 500px) {
+  .about__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.about__director {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 736px;
+  height: 216px;
+  padding: 0;
+  margin: 32px 0 0 0;
+}
+
+@media screen and (max-width: 860px) {
+  .about__director {
+    width: 666px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .about__director {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+.about__director-speach {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  width: 448px;
+}
+
+@media screen and (max-width: 860px) {
+  .about__director-speach {
+    width: 378px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .about__director-speach {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about__director-speach {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.about__director-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 216px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 735px) {
+  .about__director-photo {
+    position: relative;
+    width: 328px;
+    height: 277px;
+    margin: 16px 0 0 0;
+  }
+}
+
+.about__director-caption {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  width: 448px;
+}
+
+@media screen and (max-width: 860px) {
+  .about__director-caption {
+    width: 378px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .about__director-caption {
+    width: 100%;
+    margin: 16px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about__director-caption {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.about__history {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 32px 0 0 0;
+}
+
+.about__history-title {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  color: #005596;
+}
+
+@media screen and (max-width: 500px) {
+  .about__history-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.about__history-text {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 16px 0 0 0;
+  padding: 0;
+  color: #333333;
+  width: 100%;
+}
+
+.about__history-text-list {
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+.about__history-text-list-item {
+  margin: 0;
+}

@@ -10,7 +10,6 @@ const nextButton = carousel.querySelector('.carousel__btn-next');
 // Меню
 const menu = document.querySelector('.menu');
 const menuContainer = document.querySelector('.menu__container');
-const menuNavigation = document.querySelector('.menu__navigation');
 const menuOpenButton = document.querySelector('.header__open-menu-button');
 const menuCloseButton = document.querySelector('.menu__close-btn');
 const switchThumb = document.querySelector('.menu__lang-switch-front');
@@ -67,19 +66,19 @@ function slideToNext() {
 }
 
 // автоматическая прокрутка
-function autoSlide() {
-  if (position === -width * (listElems.length - count(window.innerWidth))) {
-    position = width * count(window.innerWidth);
-  }
-  position -= width * count(window.innerWidth);
-  position = Math.max(
-    position,
-    -width * (listElems.length - count(window.innerWidth))
-  );
-  list.style.marginLeft = position + 'px';
-}
+// function autoSlide() {
+//   if (position === -width * (listElems.length - count(window.innerWidth))) {
+//     position = width * count(window.innerWidth);
+//   }
+//   position -= width * count(window.innerWidth);
+//   position = Math.max(
+//     position,
+//     -width * (listElems.length - count(window.innerWidth))
+//   );
+//   list.style.marginLeft = position + 'px';
+// }
 
-setInterval(autoSlide, 6000);
+// setInterval(autoSlide, 6000);
 
 // Меню
 
@@ -91,7 +90,7 @@ function openMenu() {
   menuCloseButton.addEventListener('click', closeMenu);
   menuRuLang.addEventListener('click', switchToRussian);
   menuEnLang.addEventListener('click', switchToEnglish);
-  menuContainer.addEventListener('click', closeMenuByOutsideClick);
+  menuContainer.addEventListener('click', closeMenuByLinkClick);
   menu.addEventListener('click', closeMenu);
   document.addEventListener('keydown', closeMenuByEsc);
 }
@@ -104,12 +103,12 @@ function closeMenu() {
   menuCloseButton.removeEventListener('click', closeMenu);
   menuRuLang.removeEventListener('click', switchToRussian);
   menuEnLang.removeEventListener('click', switchToEnglish);
-  menuContainer.removeEventListener('click', closeMenuByOutsideClick);
+  menuContainer.removeEventListener('click', closeMenuByLinkClick);
   menu.removeEventListener('click', closeMenu);
   document.removeEventListener('keydown', closeMenuByEsc);
 }
 
-function closeMenuByOutsideClick(event) {
+function closeMenuByLinkClick(event) {
   event.stopPropagation();
   if (event.target.classList.value.includes('menu__navigation-btn')) {
     closeMenu();
