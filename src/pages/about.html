@@ -607,7 +607,78 @@
           </div>
         </div>
       </section>
-      <section class="contactbox"></section>
+      <section class="contactbox">
+        <div class="contactbox__container">
+          <h2 class="contactbox__title">НАПИШИТЕ НАМ</h2>
+          <form class="contactbox__form">
+            <fieldset class="contactbox__fieldset">
+              <div class="contactbox__user-info">
+                <input
+                  class="contactbox__user-name contactbox__user-data"
+                  type="text"
+                  placeholder="Ваше имя"
+                  id="contactbox__user-name"
+                  name="contactbox__user-name"
+                  required
+                  minlength="2"
+                  maxlength="30"
+                />
+                <input
+                  class="contactbox__user-email contactbox__user-data"
+                  type="email"
+                  placeholder="Ваш email"
+                  id="contactbox__user-email"
+                  name="contactbox__user-email"
+                  required
+                />
+              </div>
+              <textarea
+                class="contactbox__user-message contactbox__user-data"
+                type="textarea"
+                placeholder="Ваше сообщение"
+                id="contactbox__user-message"
+                name="contactbox__user-message"
+                required
+                minlength="2"
+              ></textarea>
+            </fieldset>
+            <div class="contactbox__send-options">
+              <div class="contactbox__checkbox-container">
+                <input
+                  class="contactbox__checkbox"
+                  type="checkbox"
+                  id="contactbox__checkbox"
+                  name="contactbox__checkbox"
+                />
+                <label
+                  class="contactbox__checkbox-label"
+                  for="contactbox__checkbox"
+                  >Я согласен с
+                  <a class="contactbox__checkbox-rules-link link" href="#"
+                    >правилами обработки</a
+                  >
+                  персональных данных.</label
+                >
+              </div>
+              <button class="contactbox__submit-btn button" type="submit">
+                <p class="contactbox__submit-btn-text">Отправить сообщение</p>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
       <section class="carousel">
         <div id="carousel__container" class="carousel__container">
           <div class="carousel__galery">

@@ -31,7 +31,8 @@ export class Popup {
     // Закрываю из области overlay (при этом испльзую mousedown а не click), либо нажатием на крестик
     if (
       evt.target.classList.contains('popup_opened') ||
-      evt.target === this._closeButton
+      evt.target === this._closeButton ||
+      evt.target.tagName == "path"
     ) {
       this.close();
     }

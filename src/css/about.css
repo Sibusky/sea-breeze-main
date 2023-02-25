@@ -514,3 +514,148 @@
   width: fit-content;
   height: fit-content;
 }
+
+.contactbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  background-color: rgba(86, 159, 211, 0.9);
+}
+
+.contactbox__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 32px 0;
+  width: calc((1120 / 1440) * 100%);
+}
+@media screen and (max-width: 1300px) {
+  .contactbox__container {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contactbox__container {
+    width: calc((1069 / 1133) * 100%);
+  }
+}
+@media screen and (max-width: 650px) {
+  .contactbox__container {
+    width: 95%;
+  }
+}
+
+.contactbox__title {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.contactbox__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0;
+  margin: 24px 0 0 0;
+}
+
+.contactbox__fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.contactbox__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 23%;
+  height: 88px;
+}
+
+.contactbox__user-data {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 5.5px 9px;
+  color: #333333;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #005596;
+  border-radius: 4px;
+}
+
+.contactbox__user-data::placeholder {
+  color: #569fd3;
+}
+
+.contactbox__user-data:focus {
+  outline: none;
+
+  box-shadow: inset 0px 0px 5px #569fd3;
+}
+
+.contactbox__user-name {
+  height: 32px;
+}
+
+.contactbox__user-email {
+  height: 32px;
+}
+
+.contactbox__user-message {
+  width: 74.5%;
+  height: 88px;
+  resize: none;
+}
+
+.contactbox__send-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 74.5%;
+}
+
+.contactbox__checkbox-container {
+    
+}
+
+.contactbox__checkbox {
+}
+
+.contactbox__checkbox-label {
+}
+
+.contactbox__submit-btn {
+}
+
+.contactbox__submit-btn-text {
+}
