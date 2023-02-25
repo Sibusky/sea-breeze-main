@@ -5,7 +5,12 @@
   display: none;
 }
 @media screen and (max-width: 1200px) {
-    .header__open-menu-button {
-        display: block;
-      }
+  .header__open-menu-button {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__open-menu-button {
+    top: 14px;
+  }
 }

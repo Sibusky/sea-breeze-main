@@ -1,85 +1,29 @@
 import '../css/about.css';
+import { Carousel } from './utils/carousel.js';
 
-// Карусель
-const carousel = document.querySelector('.carousel__container');
-const list = carousel.querySelector('.carousel__galery-list');
-const listElems = carousel.querySelectorAll('.carousel__galery-item');
-const prevButton = carousel.querySelector('.carousel__btn-prev');
-const nextButton = carousel.querySelector('.carousel__btn-next');
+// Карусели
+const bottomSlider = new Carousel('carousel', 244);
+const cetificatesSlider = new Carousel('certificates', 244);
 
 // Меню
 const menu = document.querySelector('.menu');
 const menuContainer = document.querySelector('.menu__container');
-const menuNavigation = document.querySelector('.menu__navigation');
 const menuOpenButton = document.querySelector('.header__open-menu-button');
 const menuCloseButton = document.querySelector('.menu__close-btn');
 const switchThumb = document.querySelector('.menu__lang-switch-front');
 const menuRuLang = document.querySelector('.menu__lang-ru');
 const menuEnLang = document.querySelector('.menu__lang-en');
 
-// этот код помечает картинки, для удобства разработки в карусели
-// let i = 1;
-// for (let li of carousel.querySelectorAll('li')) {
-//   li.style.position = 'relative';
-//   li.insertAdjacentHTML(
-//     'beforeend',
-//     `<span style="position:absolute;left:0;top:0">${i}</span>`
-//   );
-//   i++;
-// }
+//Карусели
 
-// конфигурация карусели
-// видимое количество изображений
-const count = (windowSize) => {
-  if (windowSize > 1050) {
-    return 4;
-  }
-  if (windowSize <= 1050 && windowSize > 750) {
-    return 3;
-  }
-  if (windowSize <= 750 && windowSize > 650) {
-    return 2;
-  } else {
-    return 1;
-  }
-};
+bottomSlider._setEventListeners();
+bottomSlider._slideToNext();
+bottomSlider._slideToPrev();
 
-let width = 244; // ширина картинки
-let position = 0; // положение ленты прокрутки
-
-function slideToPrev() {
-  // сдвиг влево
-  position += width * count(window.innerWidth);
-  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-  position = Math.min(position, 0);
-  list.style.marginLeft = position + 'px';
-}
-
-function slideToNext() {
-  // сдвиг вправо
-  position -= width * count(window.innerWidth);
-  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-  position = Math.max(
-    position,
-    -width * (listElems.length - count(window.innerWidth))
-  );
-  list.style.marginLeft = position + 'px';
-}
-
-// автоматическая прокрутка
-// function autoSlide() {
-//   if (position === -width * (listElems.length - count(window.innerWidth))) {
-//     position = width * count(window.innerWidth);
-//   }
-//   position -= width * count(window.innerWidth);
-//   position = Math.max(
-//     position,
-//     -width * (listElems.length - count(window.innerWidth))
-//   );
-//   list.style.marginLeft = position + 'px';
-// }
-
-// setInterval(autoSlide, 6000);
+cetificatesSlider._setEventListeners();
+cetificatesSlider._openPhoto();
+cetificatesSlider._slideToNext();
+cetificatesSlider._slideToPrev();
 
 // Меню
 
@@ -136,8 +80,5 @@ function switchToRussian() {
 }
 
 // Слушатели
-// Карусель
-prevButton.addEventListener('click', slideToPrev);
-nextButton.addEventListener('click', slideToNext);
 // Меню
 menuOpenButton.addEventListener('click', openMenu);
