@@ -1,0 +1,19 @@
+.about__history-title {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+  color: #005596;
+}
+@media screen and (max-width: 500px) {
+    .about__history-title {
+        font-size: 20px;
+        line-height: 24px;
+      }
+}

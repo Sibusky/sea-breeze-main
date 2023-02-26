@@ -1,0 +1,26 @@
+.contactbox__user-data {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 5.5px 9px;
+  color: #333333;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #005596;
+  border-radius: 4px;
+}
+.contactbox__user-data::placeholder {
+  color: #569fd3;
+}
+.contactbox__user-data:focus {
+  outline: none;
+
+  box-shadow: inset 0px 0px 5px #569fd3;
+}

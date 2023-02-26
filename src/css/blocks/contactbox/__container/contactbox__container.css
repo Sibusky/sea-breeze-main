@@ -1,25 +1,25 @@
-.carousel__container {
-  position: relative;
+.contactbox__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: calc((1120 / 1440) * 100%);
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 0;
-  padding: 0;
+  padding: 32px 0;
+  width: calc((1120 / 1440) * 100%);
 }
 @media screen and (max-width: 1300px) {
-    .carousel__container {
+    .contactbox__container {
         width: 83%;
       }
 }
 @media screen and (max-width: 1200px) {
-    .carousel__container {
+    .contactbox__container {
         width: calc((1069 / 1133) * 100%);
       }
 }
 @media screen and (max-width: 650px) {
-    .carousel__container {
+    .contactbox__container {
         width: 91%;
+        padding: 24px 0 16px 0;
       }
 }

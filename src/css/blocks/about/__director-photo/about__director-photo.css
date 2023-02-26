@@ -1,0 +1,20 @@
+.about__director-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 216px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 735px) {
+    .about__director-photo {
+        position: relative;
+        width: 328px;
+        height: 277px;
+        margin: 16px 0 0 0;
+      }
+}

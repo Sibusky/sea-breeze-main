@@ -1,0 +1,24 @@
+.certificates__galery {
+  width: 958px;
+  height: fit-content;
+  overflow-y: overlay;
+}
+@media screen and (max-width: 1050px) {
+    .certificates__galery {
+        width: 713px;
+      }
+}
+@media screen and (max-width: 750px) {
+    .certificates__galery {
+        width: 472px;
+      }
+}
+@media screen and (max-width: 650px) {
+    .certificates__galery {
+        width: 100%;
+      }
+}
+.certificates__galery::-webkit-scrollbar {
+  height: 0;
+  visibility: hidden;
+}

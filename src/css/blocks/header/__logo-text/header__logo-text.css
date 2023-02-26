@@ -12,8 +12,15 @@
   color: #fff;
 }
 @media screen and (max-width: 1200px) {
-    .header__logo-text {
-        width: 140px;
-        margin: 0 0 0 16px;
-      }
+  .header__logo-text {
+    width: 140px;
+    margin: 0 0 0 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__logo-text {
+    margin: 0 0 0 10px;
+    letter-spacing: 2px;
+  }
 }

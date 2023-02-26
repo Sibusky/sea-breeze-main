@@ -1,0 +1,7 @@
+.popup__close-btn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: fit-content;
+  height: fit-content;
+}

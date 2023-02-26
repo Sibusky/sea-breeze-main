@@ -1,0 +1,18 @@
+.contactbox__submit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 263px;
+  height: 48px;
+  background: #005596;
+  border-radius: 99px;
+  border: none;
+  margin: 0;
+  padding: 0 25px;
+}
+@media screen and (max-width: 650px) {
+    .contactbox__submit-btn {
+        width: 328px;
+        padding: 0 57px;
+      }
+}

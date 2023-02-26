@@ -1,0 +1,19 @@
+.certificates__btn {
+  position: absolute;
+  top: 133px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+@media (pointer: coarse) {
+    .certificates__btn {
+        display: none;
+      }
+}
+.certificates__btn:focus {
+  outline: none;
+}

@@ -4,11 +4,13 @@ export class Popup {
     this._handleEscClose = this._handleEscClose.bind(this);
     this._closeButton = this._popup.querySelector('.popup__close-btn');
     this._image = this._popup.querySelector('.popup__photo');
+    this._description = this._popup.querySelector('.popup__photo-description');
   }
 
   open(image) {
     this._popup.classList.add('popup_opened');
     this._image.src = image.src;
+    this._description.textContent = image.alt;
     this._popup.addEventListener('mousedown', (evt) =>
       this.closeFromOverlay(evt)
     );
@@ -32,7 +34,7 @@ export class Popup {
     if (
       evt.target.classList.contains('popup_opened') ||
       evt.target === this._closeButton ||
-      evt.target.tagName == "path"
+      evt.target.tagName == 'path'
     ) {
       this.close();
     }

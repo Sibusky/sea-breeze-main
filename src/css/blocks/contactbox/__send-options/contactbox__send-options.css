@@ -1,0 +1,17 @@
+.contactbox__send-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 74.5%;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+@media screen and (max-width: 650px) {
+    .contactbox__send-options {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 105px;
+        margin: 24px 0 0 0;
+      }
+}

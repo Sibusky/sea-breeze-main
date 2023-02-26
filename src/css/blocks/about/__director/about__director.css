@@ -1,0 +1,24 @@
+.about__director {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 736px;
+  height: 216px;
+  padding: 0;
+  margin: 24px 0 0 0;
+}
+@media screen and (max-width: 860px) {
+    .about__director {
+        width: 666px;
+      }
+}
+@media screen and (max-width: 735px) {
+    .about__director {
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+      }
+}

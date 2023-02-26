@@ -1,0 +1,13 @@
+.contactbox__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 23%;
+  height: 88px;
+}
+@media screen and (max-width: 650px) {
+    .contactbox__user-info {
+        width: 100%;
+      }
+}
