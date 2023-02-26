@@ -1,0 +1,20 @@
+.contacts__office-title {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: 32px 0 0 0;
+  padding: 0;
+  color: #005596;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 650px) {
+    .contacts__office-title {
+        position: absolute;
+        display: none;
+      }
+}

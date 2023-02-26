@@ -1,0 +1,16 @@
+.contacts__director-and-company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 487px;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+@media screen and (max-width: 650px) {
+    .contacts__director-and-company-info {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 168px;
+      }
+}

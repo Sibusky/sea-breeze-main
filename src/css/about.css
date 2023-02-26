@@ -9,6 +9,8 @@
 @import url(./blocks/header/__logo-text/header__logo-text.css);
 @import url(./blocks/header/__phone-number-and-navigation/header__phone-number-and-navigation.css);
 @import url(./blocks/header/__phone-number/header__phone-number.css);
+@import url(./blocks/header/__phones/header__phones.css);
+@import url(./blocks/header/__phone-number/_underline/header__phone-number_underline.css);
 @import url(./blocks/header/__navigation/header__navigation.css);
 @import url(./blocks/header/__navigation-list/header__navigation-list.css);
 @import url(./blocks/header/__navigation-item/header__navigation-item.css);
