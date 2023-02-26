@@ -546,10 +546,15 @@ template {
   text-rendering: optimizeLegibility;
   text-decoration: none;
   letter-spacing: 0;
-  margin: 0;
+  margin: 0 32px 0 0;
   padding: 0;
   color: #96d3ff;
 }
+
+.header__phone-number:last-of-type {
+  margin: 0;
+}
+
 .header__navigation {
   max-width: 100%;
   margin: 16px 0 0 0;
