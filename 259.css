@@ -482,7 +482,7 @@ template {
 }
 @media screen and (max-width: 650px) {
     .header__container {
-        width: 95%;
+        width: 91%;
       }
 }
 .header__logo-container {
@@ -513,11 +513,19 @@ template {
   color: #fff;
 }
 @media screen and (max-width: 1200px) {
-    .header__logo-text {
-        width: 140px;
-        margin: 0 0 0 16px;
-      }
+  .header__logo-text {
+    width: 140px;
+    margin: 0 0 0 16px;
+  }
 }
+
+@media screen and (max-width: 650px) {
+  .header__logo-text {
+    margin: 0 0 0 10px;
+    letter-spacing: 2px;
+  }
+}
+
 .header__phone-number-and-navigation {
   display: flex;
   flex-direction: column;
@@ -678,7 +686,7 @@ template {
 }
 @media screen and (max-width: 650px) {
     .carousel {
-        height: 137px;
+        height: 128px;
       }
 }
 .carousel__container {
@@ -703,7 +711,7 @@ template {
 }
 @media screen and (max-width: 650px) {
     .carousel__container {
-        width: 95%;
+        width: 91%;
       }
 }
 .carousel__btn {
@@ -832,7 +840,7 @@ template {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 95%;
+        width: 91%;
         padding: 32px 0;
       }
 }

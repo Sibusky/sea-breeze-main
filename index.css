@@ -83,7 +83,7 @@
 @media screen and (max-width: 650px) {
   .assortment__container {
     grid-auto-rows: 128px;
-    width: 95%;
+    width: 91%;
     margin: 16px 0 0 0;
   }
 }
