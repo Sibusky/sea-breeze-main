@@ -1,0 +1,7 @@
+.assortment__link-piers::before {
+  background: linear-gradient(
+    124.01deg,
+    #005596 6.77%,
+    rgba(0, 85, 150, 0) 100%
+  );
+}

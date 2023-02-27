@@ -1,0 +1,30 @@
+.about__director-speach {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  width: 448px;
+}
+@media screen and (max-width: 860px) {
+    .about__director-speach {
+        width: 378px;
+      }
+}
+@media screen and (max-width: 735px) {
+    .about__director-speach {
+        width: 100%;
+      }
+}
+@media screen and (max-width: 500px) {
+    .about__director-speach {
+        font-size: 14px;
+        line-height: 16px;
+      }
+}

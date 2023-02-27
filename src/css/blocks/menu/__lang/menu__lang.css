@@ -1,0 +1,22 @@
+.menu__lang {
+  position: relative;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  color: #005596;
+}
+.menu__lang:before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -9px;
+  width: 35px;
+  height: 29px;
+}

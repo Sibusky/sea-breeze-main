@@ -1,0 +1,31 @@
+.about__director-caption {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  width: 448px;
+}
+@media screen and (max-width: 860px) {
+    .about__director-caption {
+        width: 378px;
+      }
+}
+@media screen and (max-width: 735px) {
+    .about__director-caption {
+        width: 100%;
+        margin: 16px 0 0 0;
+      }
+}
+@media screen and (max-width: 500px) {
+    .about__director-caption {
+        font-size: 14px;
+        line-height: 16px;
+      }
+}

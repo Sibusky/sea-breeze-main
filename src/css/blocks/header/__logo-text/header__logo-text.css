@@ -1,0 +1,26 @@
+.header__logo-text {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 8px 0 0 0;
+  padding: 0;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .header__logo-text {
+    width: 140px;
+    margin: 0 0 0 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__logo-text {
+    margin: 0 0 0 10px;
+    letter-spacing: 2px;
+  }
+}

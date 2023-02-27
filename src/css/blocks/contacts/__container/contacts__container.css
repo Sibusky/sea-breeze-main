@@ -1,0 +1,26 @@
+.contacts__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 32px 0 40px 0;
+  width: calc((1120 / 1440) * 100%);
+}
+@media screen and (max-width: 1300px) {
+    .contacts__container {
+        width: 83%;
+      }
+}
+@media screen and (max-width: 1200px) {
+    .contacts__container {
+        width: calc((1069 / 1133) * 100%);
+      }
+}
+@media screen and (max-width: 650px) {
+    .contacts__container {
+        width: 91%;
+        padding: 24px 0 0 0;
+      }
+}

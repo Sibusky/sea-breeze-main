@@ -1,0 +1,10 @@
+.youtube-logo {
+  width: fit-content;
+  height: fit-content;
+}
+.youtube-logo:hover .youtube-logo-path-to-red {
+  fill: #ff0000;
+}
+.youtube-logo:hover .youtube-logo-path-to-black {
+  fill: #000;
+}

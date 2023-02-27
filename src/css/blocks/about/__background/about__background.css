@@ -1,0 +1,17 @@
+.about__background {
+  background: url('../../../../images/luxury-yacht-model.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 675px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 650px) {
+    .about__background {
+        display: none;
+      }
+}

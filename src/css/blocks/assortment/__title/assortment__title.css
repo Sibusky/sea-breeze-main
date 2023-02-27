@@ -1,0 +1,27 @@
+.assortment__title {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 24px 32px;
+  padding: 0;
+  color: #fff;
+  height: fit-content;
+  max-width: 89%;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  word-wrap: normal;
+}
+@media screen and (max-width: 650px) {
+  .assortment__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 16px;
+    letter-spacing: 1px;
+  }
+}

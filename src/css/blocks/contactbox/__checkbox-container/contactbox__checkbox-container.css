@@ -1,0 +1,5 @@
+.contactbox__checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

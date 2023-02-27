@@ -1,0 +1,15 @@
+.contacts__map {
+  background-image: url('../../../../images/map.png');
+  width: 100%;
+  height: calc(480px - 32px - 32px);
+  background-size: cover;
+  padding: 0;
+  margin: 32px 0 0 0;
+}
+@media screen and (max-width: 650px) {
+    .contacts__map {
+        order: 1;
+        margin: 24px 0 0 0;
+        height: 400px;
+      }
+}

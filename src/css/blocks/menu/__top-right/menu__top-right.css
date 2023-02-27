@@ -1,0 +1,16 @@
+.menu__top-right {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 440px;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 735px) {
+    .menu__top-right {
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 32px 0 0 0;
+      }
+}

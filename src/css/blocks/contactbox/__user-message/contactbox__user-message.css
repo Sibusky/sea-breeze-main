@@ -1,0 +1,12 @@
+.contactbox__user-message {
+  width: 74.5%;
+  height: 88px;
+  resize: none;
+}
+@media screen and (max-width: 650px) {
+    .contactbox__user-message {
+        height: 160px;
+        width: 100%;
+        margin: 24px 0 0 0;
+      }
+}

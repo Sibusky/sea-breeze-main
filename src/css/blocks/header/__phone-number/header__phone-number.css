@@ -1,0 +1,17 @@
+.header__phone-number {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 32px 0 0;
+  padding: 0;
+  color: #96d3ff;
+}
+
+.header__phone-number:last-of-type {
+  margin: 0;
+}

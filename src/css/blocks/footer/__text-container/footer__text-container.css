@@ -1,0 +1,30 @@
+.footer__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: fit-content;
+  padding: 0;
+  margin: 0 auto 0 96px;
+}
+@media screen and (max-width: 1050px) {
+    .footer__text-container {
+        margin: 0 auto 0 10px;
+      }
+}
+@media screen and (max-width: 860px) {
+    .footer__text-container {
+        margin: 0 0 0 auto;
+        align-items: flex-end;
+        width: auto;
+      }
+}
+@media screen and (max-width: 650px) {
+    .footer__text-container {
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+      }
+}

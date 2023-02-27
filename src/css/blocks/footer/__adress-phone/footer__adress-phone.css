@@ -1,0 +1,19 @@
+.footer__adress-phone {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+@media screen and (max-width: 650px) {
+    .footer__adress-phone {
+        text-align: center;
+        margin: 16px 0 0 0;
+      }
+}

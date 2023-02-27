@@ -1,0 +1,14 @@
+.assortment__img-crane {
+  background-image: url('../../../../images/cranes.png');
+  background-position: right;
+}
+@media screen and (max-width: 860px) {
+    .assortment__img-crane {
+        background-image: url('../../../../images/cranes-zoom-out.png');
+      }
+}
+@media screen and (max-width: 860px) {
+    .assortment__img-crane {
+        background-image: url('../../../../images/cranes-zoom-out-out.png');
+      }
+}

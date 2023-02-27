@@ -1,0 +1,10 @@
+.footer__navigation {
+  width: 100%;
+  height: fit-content;
+}
+@media screen and (max-width: 1200px) {
+    .footer__navigation {
+        position: absolute;
+        display: none;
+      }
+}

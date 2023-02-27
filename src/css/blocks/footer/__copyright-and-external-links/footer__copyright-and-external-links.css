@@ -1,0 +1,22 @@
+.footer__copyright-and-external-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 860px) {
+    .footer__copyright-and-external-links {
+        position: absolute;
+        top: 88px;
+        right: 0;
+      }
+}
+@media screen and (max-width: 650px) {
+    .footer__copyright-and-external-links {
+        top: 272px;
+        right: 50%;
+        margin: 0 -78px 0 0;
+      }
+}

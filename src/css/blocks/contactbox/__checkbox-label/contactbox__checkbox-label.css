@@ -1,0 +1,13 @@
+.contactbox__checkbox-label {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 0 8px;
+  padding: 0;
+  color: #fff;
+}

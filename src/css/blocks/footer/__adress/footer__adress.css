@@ -1,0 +1,31 @@
+.footer__adress {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 400px;
+  padding: 0;
+  margin: 24px 0 0 0;
+}
+@media screen and (max-width: 1200px) {
+    .footer__adress {
+        margin: 0;
+      }
+}
+@media screen and (max-width: 1050px) {
+    .footer__adress {
+        width: 375px;
+      }
+}
+@media screen and (max-width: 860px) {
+    .footer__adress {
+        width: 58vw;
+      }
+}
+@media screen and (max-width: 650px) {
+    .footer__adress {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 32px 0 0 0;
+      }
+}

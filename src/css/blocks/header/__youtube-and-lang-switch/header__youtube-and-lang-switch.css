@@ -1,0 +1,11 @@
+.header__youtube-and-lang-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: calc((140 / 1120) * 100%);
+}
+@media screen and (max-width: 1200px) {
+    .header__youtube-and-lang-switch {
+        display: none;
+      }
+}

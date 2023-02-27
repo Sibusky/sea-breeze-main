@@ -1,0 +1,8 @@
+.menu__container_opened {
+  transform: translateY(160px);
+}
+@media screen and (max-width: 735px) {
+    .menu__container_opened {
+        transform: translateY(640px);
+      }
+}

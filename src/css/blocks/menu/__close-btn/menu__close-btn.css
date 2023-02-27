@@ -1,0 +1,11 @@
+.menu__close-btn {
+  width: fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 735px) {
+    .menu__close-btn {
+        position: absolute;
+        top: -52px;
+        right: 0;
+      }
+}

@@ -1,0 +1,25 @@
+.menu__navigation-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border-radius: 99px;
+  background-color: #005596;
+  margin: 0;
+  padding: 16px 25px;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #fff;
+}
+@media screen and (max-width: 735px) {
+    .menu__navigation-btn {
+        width: 328px;
+      }
+}

@@ -1,0 +1,11 @@
+.header__phone-number-and-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto 0 calc((70 / 1120) * 100%);
+}
+@media screen and (max-width: 1200px) {
+    .header__phone-number-and-navigation {
+        display: none;
+      }
+}

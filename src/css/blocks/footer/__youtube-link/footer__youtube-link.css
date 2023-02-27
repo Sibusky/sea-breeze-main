@@ -1,0 +1,9 @@
+.footer__youtube-link {
+  margin: 24px 0 0 0;
+}
+@media screen and (max-width: 860px) {
+    .footer__youtube-link {
+        position: absolute;
+        display: none;
+      }
+}
