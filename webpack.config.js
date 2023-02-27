@@ -9,7 +9,7 @@ module.exports = {
   entry: {
     index: './src/js/index.js',
     about: './src/js/about.js',
-    products: './src/js/products.js',
+    piers: './src/js/piers.js',
     blog: './src/js/blog.js',
     contacts: './src/js/contacts.js',
   },
@@ -90,9 +90,9 @@ module.exports = {
       chunks: ['about'],
     }),
     new HtmlWebpackPlugin({
-      filename: 'products.html',
-      template: './src/pages/products.html',
-      chunks: ['products'],
+      filename: 'piers.html',
+      template: './src/pages/piers.html',
+      chunks: ['piers'],
     }),
     new HtmlWebpackPlugin({
       filename: 'blog.html',
