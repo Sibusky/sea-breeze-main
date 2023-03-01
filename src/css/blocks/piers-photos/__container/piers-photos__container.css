@@ -1,0 +1,5 @@
+.piers-photos__container {
+  position: relative;
+  justify-content: space-between;
+  height: 100%;
+}
