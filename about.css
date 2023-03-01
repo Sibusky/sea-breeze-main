@@ -281,26 +281,11 @@
       }
 }
 .certificates__btn {
-  position: absolute;
   top: 133px;
-  display: block;
-  width: 56px;
-  height: 56px;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
 }
-@media (pointer: coarse) {
-    .certificates__btn {
-        display: none;
-      }
-}
-.certificates__btn:focus {
-  outline: none;
-}
+
 .certificates__btn-prev {
-  background-image: url(811d1fa2bc7ac7e1ccbb.svg);
+  background-image: url(fe73a3a44f2774b47fa7.svg);
   left: 0;
 }
 .certificates__galery {
@@ -359,7 +344,7 @@
   width: 100%;
 }
 .certificates__btn-next {
-  background-image: url(f555293b7e76a43a781c.svg);
+  background-image: url(d3a8abcddc4033017d96.svg);
   right: 0;
 }
 .popup {
