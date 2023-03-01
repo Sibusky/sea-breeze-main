@@ -1,0 +1,8 @@
+.piers-photo__btn {
+  top: 470px;
+}
+@media screen and (max-width: 650px) {
+    .piers-photo__btn {
+        top: 47px;
+      }
+}

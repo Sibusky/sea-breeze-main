@@ -1,0 +1,13 @@
+.piers-photos {
+  height: 634px;
+  margin: 0;
+  padding: 32px 0 24px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+@media screen and (max-width: 650px) {
+    .piers-photos {
+        height: 202px;
+        padding: 24px 0 24px 0;
+      }
+}

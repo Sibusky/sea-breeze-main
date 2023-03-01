@@ -28,24 +28,11 @@
 
 @import url(./blocks/section/section.css);
 @import url(./blocks/container/container.css);
-@import url(./blocks/piers-header/piers-header.css);
-@import url(./blocks/piers-header/__title/piers-header__title.css);
-@import url(./blocks/piers-header/__image/piers-header__image.css);
-@import url(./blocks/piers-one/piers-one.css);
+
 @import url(./blocks/section/__text/section__text.css);
 @import url(./blocks/section/__title/section__title.css);
-@import url(./blocks/piers-one/__title/piers-one__title.css);
 @import url(./blocks/section/__subtitle/section__subtitle.css);
-@import url(./blocks/piers-photos/piers-photos.css);
-@import url(./blocks/piers-photos/__container/piers-photos__container.css);
-@import url(./blocks/piers-photos/__full-image/piers-photos__full-image.css);
-@import url(./blocks/piers-photos/__galery-item/piers-photos__galery-item.css);
-@import url(./blocks/piers-photos/__galery-img/piers-photos__galery-img.css);
-@import url(./blocks/piers-photo/__btn/piers-photo__btn.css);
-@import url(./blocks/piers-photo/__btn-prev/piers-photo__btn-prev.css);
-@import url(./blocks/piers-photo/__btn-next/piers-photo__btn-next.css);
-@import url(./blocks/piers-two/__title/piers-two__title.css);
-@import url(./blocks/piers-two/piers-two.css);
+
 @import url(./blocks/read-blog/read-blog.css);
 @import url(./blocks/read-blog/__title/read-blog__title.css);
 @import url(./blocks/grid/grid.css);
@@ -120,3 +107,166 @@
 @import url(./blocks/menu/__youtube-link-large/menu__youtube-link-large.css);
 @import url(./blocks/menu/__youtube-logo-large/menu__youtube-logo-large.css);
 @import url(./blocks/menu/__copyright/menu__copyright.css);
+
+.marinas-header {
+  position: relative;
+  padding: 64px 0;
+  height: 248px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 650px) {
+  .marinas-header {
+    padding: 24px 0 0 0;
+    height: fit-content;
+  }
+}
+
+.marinas-header__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../images/marinas-background.png');
+  width: 100%;
+  height: 248px;
+  z-index: -1;
+}
+@media screen and (max-width: 650px) {
+  .marinas-header__image {
+    display: none;
+  }
+}
+.marinas-header__image::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #005596 0%, rgba(0, 85, 150, 0) 100%);
+}
+
+.marinas-header__title {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 650px) {
+  .marinas-header__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #005596;
+  }
+}
+
+.marinas-lead {
+  margin: 0;
+  padding: 32px 0 0 0;
+  box-sizing: border-box;
+}
+
+.marinas-project__container {
+  padding: 40px 0 0 0;
+}
+
+.marinas-project__title {
+  margin: 0 0 64px 0;
+}
+
+.marinas-project__grid {
+  gap: 60px;
+  grid-auto-rows: 150px;
+  align-self: center;
+}
+
+.marinas-project__grid-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.marinas-project__grid-card:hover {
+  transform: none;
+}
+
+.marinas-project__grid-img {
+  width: 130px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.marinas-project__grid-img-one {
+  background-image: url('../images/marinas-project__grid-img-one.svg');
+}
+
+.marinas-project__grid-img-two {
+  background-image: url('../images/marinas-project__grid-img-two.svg');
+}
+
+.marinas-project__grid-img-three {
+  background-image: url('../images/marinas-project__grid-img-three.svg');
+}
+
+.marinas-project__grid-img-four {
+  background-image: url('../images/marinas-project__grid-img-four.svg');
+}
+
+.marinas-project__grid-img-five {
+  background-image: url('../images/marinas-project__grid-img-five.svg');
+}
+
+.marinas-project__grid-img-six {
+  background-image: url('../images/marinas-project__grid-img-six.svg');
+}
+
+.marinas-project__grid-item-text {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  color: #005596;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 260px;
+}
+
+.section__list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.marinas-full-set__container {
+  padding: 56px 0 0 0;
+}
+
+.marinas-breeze__container {
+  padding: 40px 0 0 0;
+}
+
+.read-blog__container {
+  padding: 70px 0 0 0;
+}

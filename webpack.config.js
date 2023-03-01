@@ -9,9 +9,10 @@ module.exports = {
   entry: {
     index: './src/js/index.js',
     about: './src/js/about.js',
-    piers: './src/js/piers.js',
     blog: './src/js/blog.js',
     contacts: './src/js/contacts.js',
+    piers: './src/js/piers.js',
+    marinas: './src/js/marinas.js',
   },
   optimization: {
     splitChunks: {
@@ -23,7 +24,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    chunkFilename: "[name].chunk.js",
+    chunkFilename: '[name].chunk.js',
     path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development', // включаем режим разработчика
@@ -89,11 +90,7 @@ module.exports = {
       template: './src/pages/about.html',
       chunks: ['about'],
     }),
-    new HtmlWebpackPlugin({
-      filename: 'piers.html',
-      template: './src/pages/piers.html',
-      chunks: ['piers'],
-    }),
+
     new HtmlWebpackPlugin({
       filename: 'blog.html',
       template: './src/pages/blog.html',
@@ -103,6 +100,16 @@ module.exports = {
       filename: 'contacts.html',
       template: './src/pages/contacts.html',
       chunks: ['contacts'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'piers.html',
+      template: './src/pages/piers.html',
+      chunks: ['piers'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'marinas.html',
+      template: './src/pages/marinas.html',
+      chunks: ['marinas'],
     }),
     new CleanWebpackPlugin(), // класс плагина для чистки dist
     new MiniCssExtractPlugin(), // подключение плагина для объединения файлов

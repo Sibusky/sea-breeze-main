@@ -28,24 +28,11 @@
 
 @import url(./blocks/section/section.css);
 @import url(./blocks/container/container.css);
-@import url(./blocks/piers-header/piers-header.css);
-@import url(./blocks/piers-header/__title/piers-header__title.css);
-@import url(./blocks/piers-header/__image/piers-header__image.css);
-@import url(./blocks/piers-one/piers-one.css);
+
 @import url(./blocks/section/__text/section__text.css);
 @import url(./blocks/section/__title/section__title.css);
-@import url(./blocks/piers-one/__title/piers-one__title.css);
 @import url(./blocks/section/__subtitle/section__subtitle.css);
-@import url(./blocks/piers-photos/piers-photos.css);
-@import url(./blocks/piers-photos/__container/piers-photos__container.css);
-@import url(./blocks/piers-photos/__full-image/piers-photos__full-image.css);
-@import url(./blocks/piers-photos/__galery-item/piers-photos__galery-item.css);
-@import url(./blocks/piers-photos/__galery-img/piers-photos__galery-img.css);
-@import url(./blocks/piers-photo/__btn/piers-photo__btn.css);
-@import url(./blocks/piers-photo/__btn-prev/piers-photo__btn-prev.css);
-@import url(./blocks/piers-photo/__btn-next/piers-photo__btn-next.css);
-@import url(./blocks/piers-two/__title/piers-two__title.css);
-@import url(./blocks/piers-two/piers-two.css);
+
 @import url(./blocks/read-blog/read-blog.css);
 @import url(./blocks/read-blog/__title/read-blog__title.css);
 @import url(./blocks/grid/grid.css);
@@ -53,6 +40,27 @@
 @import url(./blocks/grid/__card-link/grid__card-link.css);
 @import url(./blocks/grid/__img/grid__img.css);
 @import url(./blocks/grid/__card-title/grid__card-title.css);
+
+@import url(blocks/marinas-header/marinas-header.css);
+@import url(blocks/marinas-header/__image/marinas-header__image.css);
+@import url(blocks/marinas-header/__title/marinas-header__title.css);
+@import url(blocks/marinas-lead/marinas-lead.css);
+@import url(blocks/marinas-project/__container/marinas-project__container.css);
+@import url(blocks/marinas-project/__title/marinas-project__title.css);
+@import url(blocks/marinas-project/__grid/marinas-project__grid.css);
+@import url(blocks/marinas-project/__grid-card/marinas-project__grid-card.css);
+@import url(blocks/marinas-project/__grid-img/marinas-project__grid-img.css);
+@import url(blocks/marinas-project/__grid-img-one/marinas-project__grid-img-one.css);
+@import url(blocks/marinas-project/__grid-img-two/marinas-project__grid-img-two.css);
+@import url(blocks/marinas-project/__grid-img-three/marinas-project__grid-img-three.css);
+@import url(blocks/marinas-project/__grid-img-four/marinas-project__grid-img-four.css);
+@import url(blocks/marinas-project/__grid-img-five/marinas-project__grid-img-five.css);
+@import url(blocks/marinas-project/__grid-img-six/marinas-project__grid-img-six.css);
+@import url(blocks/marinas-project/__grid-item-text/marinas-project__grid-item-text.css);
+@import url(blocks/section/__list/section__list.css);
+@import url(blocks/marinas-full-set/__container/marinas-full-set__container.css);
+@import url(blocks/marinas-breeze/__container/marinas-breeze__container.css);
+@import url(blocks/read-blog/__container/read-blog__container.css);
 
 @import url(./blocks/contactbox/contactbox.css);
 @import url(./blocks/contactbox/__container/contactbox__container.css);

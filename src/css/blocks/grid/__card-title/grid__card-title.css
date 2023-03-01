@@ -1,0 +1,26 @@
+.grid__card-title {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+  color: #005596;
+  width: 100%;
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 650px) {
+    .grid__card-title {
+        font-size: 18px;
+        line-height: 24px;
+      }
+}
