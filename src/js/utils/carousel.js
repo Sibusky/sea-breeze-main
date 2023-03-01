@@ -9,6 +9,9 @@ export class Carousel {
     this._listElems = this._carousel.querySelectorAll(
       `.${carouselSelector}__galery-item`
     );
+    this._photoAbove = this._carousel.querySelector(
+      `.${carouselSelector}__full-image`
+    );
     this._prevButton = document.querySelector(`.${carouselSelector}__btn-prev`);
     this._nextButton = document.querySelector(`.${carouselSelector}__btn-next`);
     this._width = cardWidth; // ширина картинки
@@ -51,8 +54,24 @@ export class Carousel {
 
   // Слушатель на открытие карточек
 
-  _openPhoto() {
+  _openPhotoInModal() {
     this._list.addEventListener('click', (e) => this._openModal(e));
+  }
+
+  _openModal(e) {
+    const image = e.target.closest('li').querySelector('img');
+    const openedImage = new Popup('.popup');
+    openedImage.open(image);
+  }
+
+  _openPhotoAbove() {
+    this._list.addEventListener('click', (e) => this._showPhotoAbove(e));
+  }
+
+  _showPhotoAbove(e) {
+    const image = e.target.closest('li').querySelector('img');
+    this._photoAbove.src = image.src;
+    this._photoAbove.alt = image.alt;
   }
 
   _slideToPrev() {
@@ -72,13 +91,5 @@ export class Carousel {
       -this._width * (this._listElems.length - this._countCards())
     );
     this._list.style.marginLeft = this._position + 'px';
-  }
-
-  _openModal(e) {
-    const image = e.target
-      .closest('li')
-      .querySelector('.certificates__galery-img');
-    const openedImage = new Popup('.popup');
-    openedImage.open(image)
   }
 }

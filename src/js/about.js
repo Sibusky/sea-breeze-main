@@ -21,7 +21,7 @@ bottomSlider._slideToNext();
 bottomSlider._slideToPrev();
 
 cetificatesSlider._setEventListeners();
-cetificatesSlider._openPhoto();
+cetificatesSlider._openPhotoInModal();
 cetificatesSlider._slideToNext();
 cetificatesSlider._slideToPrev();
 
