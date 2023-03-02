@@ -1,0 +1,11 @@
+.post-header__link-back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 165px;
+}
+@media screen and (max-width: 650px) {
+    .post-header__link-back {
+        margin: 0 0 16px 0;
+      }
+}

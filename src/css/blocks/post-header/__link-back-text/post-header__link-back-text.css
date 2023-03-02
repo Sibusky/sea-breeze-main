@@ -1,0 +1,11 @@
+.post-header__link-back-text {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-decoration: underline;
+}
+@media screen and (max-width: 650px) {
+    .post-header__link-back-text {
+        color: #005596;
+      }
+}

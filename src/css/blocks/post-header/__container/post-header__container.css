@@ -1,0 +1,8 @@
+.post-header__container {
+  padding: 24px 0 0 0;
+}
+@media screen and (max-width: 650px) {
+    .post-header__container {
+        padding: 16px 0 0 0;
+      }
+}
