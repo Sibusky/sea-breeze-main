@@ -1,0 +1,21 @@
+.search__form {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  width: 352px;
+  height: 32px;
+}
+@media screen and (max-width: 860px) {
+    .search__form {
+        width: 200px;
+      }
+}
+@media screen and (max-width: 710px) {
+    .search__form {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0 0 32px 0;
+      }
+}

@@ -1,0 +1,13 @@
+.search__filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 660px;
+  height: fit-content;
+}
+@media screen and (max-width: 710px) {
+    .search__filters {
+        width: 100%;
+      }
+}

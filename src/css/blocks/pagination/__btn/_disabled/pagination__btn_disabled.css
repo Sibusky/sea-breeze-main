@@ -1,0 +1,7 @@
+.pagination__btn_disabled {
+  cursor: default;
+  filter: grayscale(80%);
+}
+.pagination__btn_disabled:hover {
+  opacity: 1;
+}

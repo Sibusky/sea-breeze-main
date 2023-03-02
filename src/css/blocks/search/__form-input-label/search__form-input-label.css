@@ -1,0 +1,8 @@
+.search__form-input-label {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  background-image: url('../../../../images/magnifier.svg');
+  width: 14px;
+  height: 14px;
+}
