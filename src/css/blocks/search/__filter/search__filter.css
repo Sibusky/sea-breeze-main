@@ -1,0 +1,17 @@
+.search__filter {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 0 8px 14px 0;
+  background: #569fd3;
+  border-radius: 16px;
+  border: none;
+  box-sizing: border-box;
+}

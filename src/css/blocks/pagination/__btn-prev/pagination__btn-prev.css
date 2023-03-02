@@ -1,0 +1,10 @@
+.pagination__btn-prev {
+  background-image: url('../../../../images/pagination-button.svg');
+  rotate: 180deg;
+  margin: 0 24px 0 0;
+}
+@media screen and (max-width: 650px) {
+    .pagination__btn-prev {
+        margin: 0 12px 0 0;
+      }
+}

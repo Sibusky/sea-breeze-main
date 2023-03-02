@@ -1,0 +1,22 @@
+.pagination__page {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #005596;
+  padding: 16px;
+  margin: 0 24px 0 0;
+  background: #96d3ff;
+  border-radius: 24px;
+  border: none;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 650px) {
+    .pagination__page {
+        margin: 0 12px 0 0;
+      }
+}
