@@ -451,9 +451,9 @@
 }
 .contactbox__user-data:focus {
   outline: none;
-
   box-shadow: inset 0px 0px 5px #569fd3;
 }
+
 .contactbox__user-name {
   height: 32px;
 }
