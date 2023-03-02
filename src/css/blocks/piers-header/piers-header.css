@@ -1,11 +1,10 @@
 .piers-header {
   position: relative;
-  padding: 64px 0;
   height: 248px;
   box-sizing: border-box;
 }
 @media screen and (max-width: 650px) {
   .piers-header {
-    padding: 24px 0 0 0;
+    height: fit-content;
   }
 }

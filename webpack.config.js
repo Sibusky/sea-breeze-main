@@ -13,6 +13,7 @@ module.exports = {
     contacts: './src/js/contacts.js',
     piers: './src/js/piers.js',
     marinas: './src/js/marinas.js',
+    outfit: './src/js/outfit.js',
   },
   optimization: {
     splitChunks: {
@@ -110,6 +111,11 @@ module.exports = {
       filename: 'marinas.html',
       template: './src/pages/marinas.html',
       chunks: ['marinas'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'outfit.html',
+      template: './src/pages/outfit.html',
+      chunks: ['outfit'],
     }),
     new CleanWebpackPlugin(), // класс плагина для чистки dist
     new MiniCssExtractPlugin(), // подключение плагина для объединения файлов
