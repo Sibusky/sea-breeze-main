@@ -29,6 +29,7 @@
 @import url(./blocks/section/section.css);
 @import url(./blocks/container/container.css);
 @import url(./blocks/piers-header/piers-header.css);
+@import url(./blocks/piers-header/__container/piers-header__container.css);
 @import url(./blocks/piers-header/__title/piers-header__title.css);
 @import url(./blocks/piers-header/__image/piers-header__image.css);
 @import url(./blocks/piers-one/piers-one.css);

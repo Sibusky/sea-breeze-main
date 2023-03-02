@@ -7,8 +7,8 @@
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "bem": "css-to-bem-file-structure marinas.css",
-    "bemify": "bemify marinas.css"
+    "bem": "css-to-bem-file-structure outfit.css",
+    "bemify": "bemify outfit.css"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

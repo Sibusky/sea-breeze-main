@@ -1,0 +1,12 @@
+.outfit-header__text {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: underline;
+  color: #005596;
+}
+@media screen and (max-width: 650px) {
+    .outfit-header__text {
+        font-size: 16px;
+        line-height: 16px;
+      }
+}

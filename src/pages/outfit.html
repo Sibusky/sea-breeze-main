@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charlift="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <link rel="stylesheet" href="./main.css" /> -->
     <link
@@ -9,7 +9,7 @@
       href="<%=require('../images/favicon.png')%>"
       type="image/png"
     />
-    <title>Главная Страница Морской Бриз</title>
+    <title>Оборудование Морской Бриз</title>
   </head>
   <body class="page">
     <header class="header">
@@ -39,9 +39,15 @@
           <p class="header__logo-text">МОРСКОЙ БРИЗ</p>
         </a>
         <div class="header__phone-number-and-navigation">
-          <p class="header__phone-number">
-            Яхт-клуб под ключ: +7 (812) 950-07-22
-          </p>
+          <div class="header__phones">
+            <p class="header__phone-number">+7 (812) 950-07-22</p>
+            <p class="header__phone-number">
+              <span class="header__phone-number_underline"
+                >Ярославль и верхняя Волга:</span
+              >
+              +7 (910) 970-57-05
+            </p>
+          </div>
           <nav class="header__navigation">
             <ul class="header__navigation-list">
               <li class="header__navigation-item">
@@ -54,7 +60,7 @@
               </li>
               <li class="header__navigation-item">
                 <a
-                  class="header__navigation-item-link link"
+                  class="header__navigation-item-link header__navigation-item-link_active link"
                   href="./piers.html"
                 >
                   Товары и услуги
@@ -376,51 +382,592 @@
       </div>
     </header>
     <main class="main">
-      <section class="assortment">
-        <div class="assortment__background"></div>
-        <ul class="assortment__container">
-          <li class="assortment__item-cranes assortment__item">
-            <a class="assortment__link-cranes assortment__link" href="./outfit.html">
-              <h2
-                class="assortment__title-cranes assortment__title assortment__title_blue"
-              >
+      <section class="outfit-header section">
+        <div class="outfit-header__image"></div>
+        <div class="outfit-header__container container">
+          <h1 class="outfit-header__title">Оборудование</h1>
+          <ul class="outfit-header__navigation-list">
+            <li id="link-1" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">
+                Лодочные подъемники Sunstream
+              </p>
+            </li>
+            <li id="link-2" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">
+                Оборудование для марин и яхт-клубов
+              </p>
+            </li>
+            <li id="link-3" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">
                 Подъемно-транспортное оборудование
-              </h2>
-              <div class="assortment__img-crane assortment__img"></div>
+              </p>
+            </li>
+            <li id="link-4" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">
+                Причальное оборудование
+              </p>
+            </li>
+            <li id="link-5" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">
+                Эллинги для хранения яхт
+              </p>
+            </li>
+            <li id="link-6" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">
+                Система стеллажного хранения лодок
+              </p>
+            </li>
+            <li id="link-7" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">Берегоукрепление</p>
+            </li>
+            <li id="link-8" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">Марины "под ключ"</p>
+            </li>
+            <li id="link-9" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">
+                Строительство индивидуальных причалов
+              </p>
+            </li>
+            <li id="link-10" class="outfit-header__navigation-list-item link">
+              <p class="outfit-header__text section__text">
+                Сюрвейерные услуги
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-1" class="outfit-lift article section">
+        <div class="outfit-lift__container container">
+          <h2 class="outfit-lift__title section__title">
+            Лодочные подъемники Sunstream
+          </h2>
+          <div class="outfit-lift__caption section__caption">
+            <p class="outfit-lift__text section__text">
+              НОВЫЕ ТЕХНОЛОГИИ Наши подъемники позволяют проводить техническое
+              обслуживание плавсредств прямо на месте хранения, тем самым
+              экономя деньги и время, предотвращая преждевременное старение и
+              продлевая жизнь плав средств. Подъемники Sunstream имеют мировое
+              лидерство в сохранении окружающей среды, применяя технологии,
+              препятствующие проникновению загрязнителей и вредных
+              микроорганизмов. Система Sunstream обладает высочайшим качеством
+              продукции.
+            </p>
+          </div>
+          <ul class="outfit-lift__grid grid">
+            <li class="outfit-lift__card grid__card">
+              <a class="outfit-lift__card-link grid__card-link link">
+                <img
+                  class="outfit-lift__img grid__img"
+                  src="<%=require('../images/outfit-lift__img.png')%>"
+                  alt="Читайте в блоге"
+                />
+                <h5 class="outfit-lift__card-title grid__card-title">
+                  Лодочные подъемники Sunstream
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-2" class="outfit-marinas-equipment article section">
+        <div class="outfit-marinas-equipment__container container">
+          <h2 class="outfit-marinas-equipment__title section__title">
+            Оборудование для марин и яхт-клубов
+          </h2>
+          <div class="outfit-marinas-equipment__caption section__caption">
+            <p class="outfit-marinas-equipment__text section__text">
+              Полный спектр оборудования для марин, яхт-клубов, частных стоянок
+              и т.п. Топливозаправочные станции, подъёмно-транспортное
+              оборудование, эллинги для хранения яхт.
+            </p>
+          </div>
+          <ul class="outfit-marinas-equipment__grid grid">
+            <li class="outfit-marinas-equipment__card grid__card">
+              <a
+                class="outfit-marinas-equipment__card-link grid__card-link link"
+              >
+                <img
+                  class="outfit-marinas-equipment__img grid__img"
+                  src="<%=require('../images/outfit-marinas-equipment__img-1.png')%>"
+                  alt="Подъемно-транспортное оборудование"
+                />
+                <h5
+                  class="outfit-marinas-equipment__card-title grid__card-title"
+                >
+                  Подъемно-транспортное оборудование
+                </h5>
+              </a>
+            </li>
+            <li class="outfit-marinas-equipment__card grid__card">
+              <a
+                class="outfit-marinas-equipment__card-link grid__card-link link"
+              >
+                <img
+                  class="outfit-marinas-equipment__img grid__img"
+                  src="<%=require('../images/outfit-marinas-equipment__img-2.png')%>"
+                  alt="Причальное оборудование"
+                />
+                <h5
+                  class="outfit-marinas-equipment__card-title grid__card-title"
+                >
+                  Причальное оборудование
+                </h5>
+              </a>
+            </li>
+            <li class="outfit-marinas-equipment__card grid__card">
+              <a
+                class="outfit-marinas-equipment__card-link grid__card-link link"
+              >
+                <img
+                  class="outfit-marinas-equipment__img grid__img"
+                  src="<%=require('../images/outfit-marinas-equipment__img-3.png')%>"
+                  alt="Заправочные станции"
+                />
+                <h5
+                  class="outfit-marinas-equipment__card-title grid__card-title"
+                >
+                  Заправочные станции
+                </h5>
+              </a>
+            </li>
+            <li class="outfit-marinas-equipment__card grid__card">
+              <a
+                class="outfit-marinas-equipment__card-link grid__card-link link"
+              >
+                <img
+                  class="outfit-marinas-equipment__img grid__img"
+                  src="<%=require('../images/outfit-marinas-equipment__img-4.png')%>"
+                  alt="Эллинги для яхт"
+                />
+                <h5
+                  class="outfit-marinas-equipment__card-title grid__card-title"
+                >
+                  Эллинги для яхт
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-3" class="outfit-lifting-equipment article section">
+        <div class="outfit-lifting-equipment__container container">
+          <h2 class="outfit-lifting-equipment__title section__title">
+            Подъемно-транспортное оборудование
+          </h2>
+          <div class="outfit-lifting-equipment__caption section__caption">
+            <p class="outfit-lifting-equipment__text section__text">
+              Полный спектр оборудования для марин, яхт-клубов, частных стоянок
+              и т.п. Топливозаправочные станции, подъёмно-транспортное
+              оборудование, эллинги для хранения яхт.
+            </p>
+          </div>
+          <ul class="outfit-lifting-equipment__grid grid">
+            <li class="outfit-lifting-equipment__card grid__card">
+              <a
+                class="outfit-lifting-equipment__card-link grid__card-link link"
+              >
+                <img
+                  class="outfit-lifting-equipment__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-1.png')%>"
+                  alt="Руководство по выбору оборудования"
+                />
+                <h5
+                  class="outfit-lifting-equipment__card-title grid__card-title"
+                >
+                  Руководство по выбору оборудования
+                </h5>
+              </a>
+            </li>
+            <li class="outfit-lifting-equipment__card grid__card">
+              <a
+                class="outfit-lifting-equipment__card-link grid__card-link link"
+              >
+                <img
+                  class="outfit-lifting-equipment__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-2.png')%>"
+                  alt="ROODBERG"
+                />
+                <h5
+                  class="outfit-lifting-equipment__card-title grid__card-title"
+                >
+                  ROODBERG
+                </h5>
+              </a>
+            </li>
+            <li class="outfit-lifting-equipment__card grid__card">
+              <a
+                class="outfit-lifting-equipment__card-link grid__card-link link"
+              >
+                <img
+                  class="outfit-lifting-equipment__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-3.png')%>"
+                  alt="ASCOM"
+                />
+                <h5
+                  class="outfit-lifting-equipment__card-title grid__card-title"
+                >
+                  ASCOM
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-4" class="outfit-piers-equipment article section">
+        <div class="outfit-piers-equipment__container container">
+          <h2 class="outfit-piers-equipment__title section__title">
+            Причальное оборудование
+          </h2>
+          <div class="outfit-piers-equipment__caption section__caption">
+            <p class="outfit-piers-equipment__text section__text">
+              Полный спектр оборудования для марин, яхт-клубов, частных стоянок
+              и т.п. Топливозаправочные станции, подъёмно-транспортное
+              оборудование, эллинги для хранения яхт.
+            </p>
+          </div>
+          <ul class="outfit-piers-equipment__grid grid">
+            <li class="outfit-piers-equipment__card grid__card">
+              <a class="outfit-piers-equipment__card-link grid__card-link link">
+                <img
+                  class="outfit-piers-equipment__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-1.png')%>"
+                  alt="Подъемно-транспортное оборудование"
+                />
+                <h5 class="outfit-piers-equipment__card-title grid__card-title">
+                  Подъемно-транспортное оборудование
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-5" class="outfit-boathouses article section">
+        <div class="outfit-boathouses__container container">
+          <h2 class="outfit-boathouses__title section__title">
+            Эллинги для хранения яхт
+          </h2>
+          <div class="outfit-boathouses__caption section__caption">
+            <p class="outfit-boathouses__text section__text">
+              А ещё диаграммы связей представляют собой не что иное, как
+              квинтэссенцию победы маркетинга над разумом и должны быть
+              объявлены нарушающими общечеловеческие нормы этики и морали. В
+              целом, конечно, современная методология разработки способствует
+              повышению качества благоприятных перспектив. Есть над чем
+              задуматься: стремящиеся вытеснить традиционное производство,
+              нанотехнологии неоднозначны и будут своевременно верифицированы.
+            </p>
+          </div>
+          <ul class="outfit-boathouses__grid grid">
+            <li class="outfit-boathouses__card grid__card">
+              <a class="outfit-boathouses__card-link grid__card-link link">
+                <img
+                  class="outfit-boathouses__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-1.png')%>"
+                  alt="Подъемно-транспортное оборудование"
+                />
+                <h5 class="outfit-boathouses__card-title grid__card-title">
+                  Подъемно-транспортное оборудование
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-6" class="outfit-shelf article section">
+        <div class="outfit-shelf__container container">
+          <h2 class="outfit-shelf__title section__title">
+            Система стеллажного хранения лодок
+          </h2>
+          <div class="outfit-shelf__caption section__caption">
+            <p class="outfit-shelf__text section__text">
+              Значимость этих проблем настолько очевидна, что понимание сути
+              ресурсосберегающих технологий обеспечивает широкому кругу
+              (специалистов) участие в формировании вывода текущих активов. Но
+              постоянный количественный рост и сфера нашей активности
+              способствует повышению качества кластеризации усилий. Внезапно,
+              активно развивающиеся страны третьего мира своевременно
+              верифицированы.
+            </p>
+          </div>
+          <ul class="outfit-shelf__grid grid">
+            <li class="outfit-shelf__card grid__card">
+              <a class="outfit-shelf__card-link grid__card-link link">
+                <img
+                  class="outfit-shelf__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-1.png')%>"
+                  alt="Подъемно-транспортное оборудование"
+                />
+                <h5 class="outfit-shelf__card-title grid__card-title">
+                  Подъемно-транспортное оборудование
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-7" class="outfit-bank-revetment article section">
+        <div class="outfit-bank-revetment__container container">
+          <h2 class="outfit-bank-revetment__title section__title">
+            Берегоукрепление
+          </h2>
+          <div class="outfit-bank-revetment__caption section__caption">
+            <p class="outfit-bank-revetment__text section__text">
+              Высокий уровень вовлечения представителей целевой аудитории
+              является четким доказательством простого факта: синтетическое
+              тестирование позволяет оценить значение вывода текущих активов.
+              Являясь всего лишь частью общей картины, активно развивающиеся
+              страны третьего мира, которые представляют собой яркий пример
+              континентально-европейского типа политической культуры, будут
+              функционально разнесены на независимые элементы. Есть над чем
+              задуматься: действия представителей оппозиции представляют собой
+              не что иное, как квинтэссенцию победы маркетинга над разумом и
+              должны быть подвергнуты целой серии независимых исследований.
+            </p>
+          </div>
+          <ul class="outfit-bank-revetment__grid grid">
+            <li class="outfit-bank-revetment__card grid__card">
+              <a class="outfit-bank-revetment__card-link grid__card-link link">
+                <img
+                  class="outfit-bank-revetment__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-1.png')%>"
+                  alt="Подъемно-транспортное оборудование"
+                />
+                <h5 class="outfit-bank-revetment__card-title grid__card-title">
+                  Подъемно-транспортное оборудование
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-8" class="outfit-marinas article section">
+        <div class="outfit-marinas__container container">
+          <h2 class="outfit-marinas__title section__title">
+            Марины "под ключ"
+          </h2>
+          <div class="outfit-marinas__caption section__caption">
+            <p class="outfit-marinas__text section__text">
+              Высокий уровень вовлечения представителей целевой аудитории
+              является четким доказательством простого факта: синтетическое
+              тестирование позволяет оценить значение вывода текущих активов.
+              Являясь всего лишь частью общей картины, активно развивающиеся
+              страны третьего мира, которые представляют собой яркий пример
+              континентально-европейского типа политической культуры, будут
+              функционально разнесены на независимые элементы. Есть над чем
+              задуматься: действия представителей оппозиции представляют собой
+              не что иное, как квинтэссенцию победы маркетинга над разумом и
+              должны быть подвергнуты целой серии независимых исследований.
+            </p>
+          </div>
+          <ul class="outfit-marinas__grid grid">
+            <li class="outfit-marinas__card grid__card">
+              <a class="outfit-marinas__card-link grid__card-link link">
+                <img
+                  class="outfit-marinas__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-1.png')%>"
+                  alt="Подъемно-транспортное оборудование"
+                />
+                <h5 class="outfit-marinas__card-title grid__card-title">
+                  Подъемно-транспортное оборудование
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-9" class="outfit-marinas article section">
+        <div class="outfit-marinas__container container">
+          <h2 class="outfit-marinas__title section__title">
+            Строительство индивидуальных причалов
+          </h2>
+          <div class="outfit-marinas__caption section__caption">
+            <p class="outfit-marinas__text section__text">
+              Безусловно, граница обучения кадров является качественно новой
+              ступенью первоочередных требований. Кстати, многие известные
+              личности набирают популярность среди определенных слоев населения,
+              а значит, должны быть обнародованы. Безусловно, перспективное
+              планирование однозначно определяет каждого участника как
+              способного принимать собственные решения касаемо как
+              самодостаточных, так и внешне зависимых концептуальных решений.
+            </p>
+          </div>
+          <ul class="outfit-marinas__grid grid">
+            <li class="outfit-marinas__card grid__card">
+              <a class="outfit-marinas__card-link grid__card-link link">
+                <img
+                  class="outfit-marinas__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-1.png')%>"
+                  alt="Подъемно-транспортное оборудование"
+                />
+                <h5 class="outfit-marinas__card-title grid__card-title">
+                  Подъемно-транспортное оборудование
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="article-10" class="outfit-survey article section">
+        <div class="outfit-survey__container container">
+          <h2 class="outfit-survey__title section__title">
+            Сюрвейерные услуги
+          </h2>
+          <div class="outfit-survey__caption section__caption">
+            <p class="outfit-survey__text section__text">
+              Безусловно, граница обучения кадров является качественно новой
+              ступенью первоочередных требований. Кстати, многие известные
+              личности набирают популярность среди определенных слоев населения,
+              а значит, должны быть обнародованы. Безусловно, перспективное
+              планирование однозначно определяет каждого участника как
+              способного принимать собственные решения касаемо как
+              самодостаточных, так и внешне зависимых концептуальных решений.
+            </p>
+          </div>
+          <ul class="outfit-survey__grid grid">
+            <li class="outfit-survey__card grid__card">
+              <a class="outfit-survey__card-link grid__card-link link">
+                <img
+                  class="outfit-survey__img grid__img"
+                  src="<%=require('../images/outfit-lifting-equipment__img-1.png')%>"
+                  alt="Подъемно-транспортное оборудование"
+                />
+                <h5 class="outfit-survey__card-title grid__card-title">
+                  Подъемно-транспортное оборудование
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="read-blog section">
+        <div class="read-blog__container container">
+          <h2 class="read-blog__title section__title">Читайте в блоге</h2>
+        </div>
+        <ul class="read-blog__grid grid container">
+          <li class="read-blog__card grid__card">
+            <a class="read-blog__card-link grid__card-link link" href="#">
+              <img
+                class="read-blog__img grid__img"
+                src="<%=require('../images/read-in-blog-1.jpg')%>"
+                alt="Читайте в блоге"
+              />
+              <h5 class="read-blog__card-title grid__card-title">
+                Понтонами Маринетек оборудованы гостевые стоянки
+              </h5>
             </a>
           </li>
-          <li class="assortment__item-piers assortment__item">
-            <a
-              class="assortment__link-piers assortment__link"
-              href="./piers.html"
-            >
-              <h2 class="assortment__title-piers assortment__title">
-                Ин&shy;ди&shy;ви&shy;ду&shy;аль&shy;ные прича&shy;лы
-              </h2>
-              <div class="assortment__img-piers assortment__img"></div>
+          <li class="read-blog__card grid__card">
+            <a class="read-blog__card-link grid__card-link link" href="#">
+              <img
+                class="read-blog__img grid__img"
+                src="<%=require('../images/read-in-blog-2.png')%>"
+                alt="Читайте в блоге"
+              />
+              <h5 class="read-blog__card-title grid__card-title">
+                Причал выполнен из ПНД (HDPE) понтонов Magic Float
+              </h5>
             </a>
           </li>
-          <li class="assortment__item-bank-revetment assortment__item">
-            <a
-              class="assortment__link-bank-revetment assortment__link"
-            >
-              <h2 class="assortment__title-bank-revetment assortment__title">
-                Берего&shy;укреп&shy;ле&shy;ние
-              </h2>
-              <div class="assortment__img-bank-revetment assortment__img"></div>
-            </a>
-          </li>
-          <li class="assortment__item-marinas assortment__item">
-            <a class="assortment__link-marinas assortment__link" href="./marinas.html">
-              <h2 class="assortment__title-marines assortment__title">
-                Марины
-              </h2>
-              <div class="assortment__img-marinas assortment__img"></div>
+          <li class="read-blog__card grid__card">
+            <a class="read-blog__card-link grid__card-link link" href="#">
+              <img
+                class="read-blog__img grid__img"
+                src="<%=require('../images/read-in-blog-3.png')%>"
+                alt="Читайте в блоге"
+              />
+              <h5 class="read-blog__card-title grid__card-title">
+                Плавучий эллинг в Вологодской области
+              </h5>
             </a>
           </li>
         </ul>
       </section>
-      <section class="carousel">
+
+      <section class="contactbox">
+        <div class="contactbox__container">
+          <h2 class="contactbox__title">НАПИШИТЕ НАМ</h2>
+          <form class="contactbox__form">
+            <fieldset class="contactbox__fieldset">
+              <div class="contactbox__user-info">
+                <input
+                  class="contactbox__user-name contactbox__user-data"
+                  type="text"
+                  placeholder="Ваше имя"
+                  id="contactbox__user-name"
+                  name="contactbox__user-name"
+                  required
+                  minlength="2"
+                  maxlength="30"
+                />
+                <input
+                  class="contactbox__user-email contactbox__user-data"
+                  type="email"
+                  placeholder="Ваш email"
+                  id="contactbox__user-email"
+                  name="contactbox__user-email"
+                  required
+                />
+              </div>
+              <textarea
+                class="contactbox__user-message contactbox__user-data"
+                type="textarea"
+                placeholder="Ваше сообщение"
+                id="contactbox__user-message"
+                name="contactbox__user-message"
+                required
+                minlength="2"
+              ></textarea>
+            </fieldset>
+            <div class="contactbox__send-options">
+              <div class="contactbox__checkbox-container">
+                <input
+                  class="contactbox__checkbox"
+                  type="checkbox"
+                  id="contactbox__checkbox"
+                  name="contactbox__checkbox"
+                />
+                <label
+                  class="contactbox__checkbox-label"
+                  for="contactbox__checkbox"
+                  >Я согласен с
+                  <a class="contactbox__checkbox-rules-link link" href="#"
+                    >правилами обработки</a
+                  >
+                  персональных данных.</label
+                >
+              </div>
+              <button class="contactbox__submit-btn button" type="submit">
+                <p class="contactbox__submit-btn-text">Отправить сообщение</p>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="carousel carousel_margin_zero">
         <div id="carousel__container" class="carousel__container">
           <div class="carousel__galery">
             <ul class="carousel__galery-list">
@@ -519,6 +1066,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer__container">
         <svg
