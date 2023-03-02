@@ -1,0 +1,10 @@
+.post-header {
+  position: relative;
+  height: 248px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 650px) {
+    .post-header {
+        height: fit-content;
+      }
+}
