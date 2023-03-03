@@ -255,31 +255,6 @@
         margin: 16px 0 0 0;
       }
 }
-.certificates__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: calc((1120 / 1440) * 100%);
-  margin: 0;
-  padding: 0;
-}
-@media screen and (max-width: 1300px) {
-    .certificates__container {
-        width: 83%;
-      }
-}
-@media screen and (max-width: 1200px) {
-    .certificates__container {
-        width: calc((1069 / 1133) * 100%);
-      }
-}
-@media screen and (max-width: 650px) {
-    .certificates__container {
-        width: 91%;
-      }
-}
 .certificates__btn {
   top: 133px;
 }

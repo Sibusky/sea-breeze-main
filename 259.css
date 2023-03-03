@@ -438,8 +438,8 @@ template {
   justify-content: flex-end;
   background-color: #fff;
   min-width: 320px;
-  max-width: 1440px;
-  margin: 0;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 0;
 }
 .header {
@@ -703,6 +703,11 @@ template {
   width: calc((1120 / 1440) * 100%);
   margin: 0;
   padding: 0;
+}
+@media screen and (min-width: 1301px) {
+  .carousel__container {
+      width: 1080px;
+    }
 }
 @media screen and (max-width: 1300px) {
     .carousel__container {
