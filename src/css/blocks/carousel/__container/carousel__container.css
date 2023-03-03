@@ -8,6 +8,11 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 1301px) {
+  .carousel__container {
+      width: 1080px;
+    }
+}
 @media screen and (max-width: 1300px) {
     .carousel__container {
         width: 83%;
