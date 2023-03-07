@@ -32,4 +32,4 @@ https://sibusky.github.io/sea-breeze-main/
 - работа с макетом, свёрстанным в редакторе Figma.
 
 **Ссылка на GitHub Pages:**
-https://sibusky.github.io/sea-breeze-main/
+https://sibusky.github.io/sea-breeze-main/   
