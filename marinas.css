@@ -208,7 +208,9 @@
   left: 0;
   background-image: url(f5b562385d0a0422c1f5.png);
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  background-size: cover;
   height: 248px;
   z-index: -1;
 }
