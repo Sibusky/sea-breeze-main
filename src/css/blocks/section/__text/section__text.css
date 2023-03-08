@@ -11,3 +11,14 @@
   padding: 0;
   color: #333333;
 }
+
+.section__text:last-of-type {
+  margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .section__text {
+    font-size: 14px;
+    line-height: 16px;
+    }
+}

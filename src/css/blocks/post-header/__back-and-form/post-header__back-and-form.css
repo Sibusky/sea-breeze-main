@@ -6,10 +6,10 @@
   margin: 0 0 52px 0;
 }
 @media screen and (max-width: 650px) {
-    .post-header__back-and-form {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 0 0 32px 0;
-      }
+  .post-header__back-and-form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+  }
 }

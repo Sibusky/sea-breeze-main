@@ -15,8 +15,13 @@
   border: none;
   box-sizing: border-box;
 }
+
+.pagination__page:last-of-type {
+  margin: 0 24px 0 0;
+}
+
 @media screen and (max-width: 650px) {
-    .pagination__page {
-        margin: 0 12px 0 0;
-      }
+  .pagination__page {
+    margin: 0 12px 0 0;
+  }
 }

@@ -36,6 +36,7 @@
 @import url(./blocks/section/__text/section__text.css);
 @import url(./blocks/section/__title/section__title.css);
 @import url(./blocks/piers-one/__title/piers-one__title.css);
+@import url(./blocks/piers-one/__intro-text/piers-one__intro-text.css);
 @import url(./blocks/section/__subtitle/section__subtitle.css);
 @import url(./blocks/piers-photos/piers-photos.css);
 @import url(./blocks/piers-photos/__container/piers-photos__container.css);
@@ -47,6 +48,9 @@
 @import url(./blocks/piers-photo/__btn-next/piers-photo__btn-next.css);
 @import url(./blocks/piers-two/__title/piers-two__title.css);
 @import url(./blocks/piers-two/piers-two.css);
+@import url(./blocks/piers-three/__title/piers-three__title.css);
+@import url(./blocks/piers-three/piers-three.css);
+@import url(./blocks/piers-three/__intro-text/piers-three__intro-text.css);
 @import url(./blocks/read-blog/read-blog.css);
 @import url(./blocks/read-blog/__title/read-blog__title.css);
 @import url(./blocks/grid/grid.css);
@@ -83,6 +87,10 @@
 @import url(./blocks/carousel/__galery-item-link/carousel__galery-item-link.css);
 @import url(./blocks/carousel/__galery-logo/carousel__galery-logo.css);
 @import url(./blocks/carousel/__btn-next/carousel__btn-next.css);
+
+@import url(./blocks/carousel/__btn-next/_color/carousel__btn-next_color_light.css);
+@import url(./blocks/carousel/__btn-prev/_color/carousel__btn-prev_color_light.css);
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__container/footer__container.css);
 @import url(./blocks/footer/__logo/footer__logo.css);

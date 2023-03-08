@@ -26,7 +26,6 @@
 @import url(./blocks/header/__open-menu-button/header__open-menu-button.css);
 @import url(./blocks/main/main.css);
 
-
 @import url(./blocks/contacts/contacts.css);
 @import url(./blocks/contacts/__container/contacts__container.css);
 @import url(./blocks/contacts/__title/contacts__title.css);
@@ -65,6 +64,12 @@
 @import url(./blocks/carousel/__galery-item-link/carousel__galery-item-link.css);
 @import url(./blocks/carousel/__galery-logo/carousel__galery-logo.css);
 @import url(./blocks/carousel/__btn-next/carousel__btn-next.css);
+
+@import url(./blocks/carousel/__btn-next/_color/carousel__btn-next_color_light.css);
+@import url(./blocks/carousel/__btn-prev/_color/carousel__btn-prev_color_light.css);
+
+@import url(./blocks/section/_color/section_color_light-yellow.css);
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__container/footer__container.css);
 @import url(./blocks/footer/__logo/footer__logo.css);

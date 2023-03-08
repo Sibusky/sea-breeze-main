@@ -12,3 +12,10 @@
 .marinas-project__grid-card:hover {
   transform: none;
 }
+
+@media screen and (max-width: 650px) {
+  .marinas-project__grid-card {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

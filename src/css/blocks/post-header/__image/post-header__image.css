@@ -10,11 +10,7 @@
   height: 248px;
   z-index: -1;
 }
-@media screen and (max-width: 650px) {
-    .post-header__image {
-        display: none;
-      }
-}
+
 .post-header__image::before {
   content: '';
   display: block;
@@ -26,4 +22,10 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(90deg, #005596 0%, rgba(0, 85, 150, 0) 100%);
+}
+
+@media screen and (max-width: 650px) {
+  .post-header__image::before {
+    background: #fffef5;
+  }
 }

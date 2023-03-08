@@ -2,7 +2,7 @@ import '../css/post.css';
 import { Carousel } from './utils/carousel.js';
 
 // Карусель
-const bottomSlider = new Carousel('carousel', 244);
+const bottomSlider = new Carousel('carousel-bottom', 244);
 const postSlider = new Carousel('post-photos', 244);
 
 

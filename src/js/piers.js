@@ -2,7 +2,7 @@ import '../css/piers.css';
 import { Carousel } from './utils/carousel.js';
 
 // Карусель
-const bottomSlider = new Carousel('carousel', 244);
+const bottomSlider = new Carousel('carousel-bottom', 244);
 const piersSliderOne = new Carousel('piers-one-photos', 244);
 const piersSliderTwo = new Carousel('piers-two-photos', 244);
 const piersSliderThree = new Carousel('piers-three-photos', 244);

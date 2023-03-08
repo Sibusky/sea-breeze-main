@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: calc((1120 / 1440) * 100%);
+  width: 1120px;
 }
 @media screen and (max-width: 1300px) {
     .about__container {

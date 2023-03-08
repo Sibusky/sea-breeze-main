@@ -1,3 +1,9 @@
 .marinas-project__grid-img-one {
   background-image: url('../../../../images/marinas-project__grid-img-one.svg');
 }
+
+@media screen and (max-width: 650px) {
+  .marinas-project__grid-img-one {
+    background-image: url('../../../../images/marinas-project__grid-img-one-small.svg');
+  }
+}

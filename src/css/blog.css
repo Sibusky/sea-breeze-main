@@ -28,6 +28,7 @@
 
 @import url(./blocks/section/section.css);
 @import url(./blocks/container/container.css);
+@import url(./blocks/section/_color/section_color_light-yellow.css);
 
 @import url(./blocks/section/__text/section__text.css);
 @import url(./blocks/section/__title/section__title.css);
@@ -88,6 +89,10 @@
 @import url(./blocks/carousel/__galery-item-link/carousel__galery-item-link.css);
 @import url(./blocks/carousel/__galery-logo/carousel__galery-logo.css);
 @import url(./blocks/carousel/__btn-next/carousel__btn-next.css);
+
+@import url(./blocks/carousel/__btn-next/_color/carousel__btn-next_color_light.css);
+@import url(./blocks/carousel/__btn-prev/_color/carousel__btn-prev_color_light.css);
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__container/footer__container.css);
 @import url(./blocks/footer/__logo/footer__logo.css);
@@ -126,4 +131,3 @@
 @import url(./blocks/menu/__youtube-link-large/menu__youtube-link-large.css);
 @import url(./blocks/menu/__youtube-logo-large/menu__youtube-logo-large.css);
 @import url(./blocks/menu/__copyright/menu__copyright.css);
-

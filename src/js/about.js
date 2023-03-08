@@ -2,7 +2,7 @@ import '../css/about.css';
 import { Carousel } from './utils/carousel.js';
 
 // Карусели
-const bottomSlider = new Carousel('carousel', 244);
+const bottomSlider = new Carousel('carousel-bottom', 244);
 const cetificatesSlider = new Carousel('certificates', 244);
 
 // Меню

@@ -5,9 +5,11 @@
   align-items: flex-start;
   width: 100%;
   margin: 32px 0 0 0;
+  padding: 0 0 50px 0;
 }
 @media screen and (max-width: 500px) {
-    .about__history {
-        margin: 24px 0 0 0;
-      }
+  .about__history {
+    margin: 24px 0 0 0;
+    padding: 0 0 24px 0;
+  }
 }

@@ -12,7 +12,7 @@
 }
 @media screen and (max-width: 650px) {
   .marinas-header__image {
-    display: none;
+    /* display: none; */
   }
 }
 .marinas-header__image::before {
@@ -26,4 +26,9 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(90deg, #005596 0%, rgba(0, 85, 150, 0) 100%);
+}
+@media screen and (max-width: 650px) {
+  .marinas-header__image::before {
+    background: #fffef5;
+  }
 }

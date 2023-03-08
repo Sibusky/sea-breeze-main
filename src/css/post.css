@@ -37,6 +37,12 @@
 /* @import url(./blocks/search/__filter/_active/search__filter_active.css);
 @import url(./blocks/search/__filter/_large/search__filter_large.css); */
 
+@import url(./blocks/piers-one/piers-one.css);
+@import url(./blocks/section/__text/section__text.css);
+@import url(./blocks/section/__title/section__title.css);
+@import url(./blocks/section/__subtitle/section__subtitle.css);
+@import url(./blocks/section/_color/section_color_light-yellow.css);
+
 @import url(./blocks/post-header/post-header.css);
 @import url(./blocks/post-header/__container/post-header__container.css);
 @import url(./blocks/post-header/__image/post-header__image.css);
@@ -46,11 +52,8 @@
 @import url(./blocks/post-header/__link-back-text/post-header__link-back-text.css);
 @import url(./blocks/post-header/__form/post-header__form.css);
 @import url(./blocks/post-tags/post-tags.css);
+@import url(./blocks/post/__container/post__container.css);
 
-@import url(./blocks/piers-one/piers-one.css);
-@import url(./blocks/section/__text/section__text.css);
-@import url(./blocks/section/__title/section__title.css);
-@import url(./blocks/section/__subtitle/section__subtitle.css);
 @import url(./blocks/piers-photos/piers-photos.css);
 @import url(./blocks/piers-photos/__container/piers-photos__container.css);
 @import url(./blocks/piers-photos/__full-image/piers-photos__full-image.css);
@@ -88,6 +91,10 @@
 @import url(./blocks/carousel/__galery-item-link/carousel__galery-item-link.css);
 @import url(./blocks/carousel/__galery-logo/carousel__galery-logo.css);
 @import url(./blocks/carousel/__btn-next/carousel__btn-next.css);
+
+@import url(./blocks/carousel/__btn-next/_color/carousel__btn-next_color_light.css);
+@import url(./blocks/carousel/__btn-prev/_color/carousel__btn-prev_color_light.css);
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__container/footer__container.css);
 @import url(./blocks/footer/__logo/footer__logo.css);
@@ -126,134 +133,3 @@
 @import url(./blocks/menu/__youtube-link-large/menu__youtube-link-large.css);
 @import url(./blocks/menu/__youtube-logo-large/menu__youtube-logo-large.css);
 @import url(./blocks/menu/__copyright/menu__copyright.css);
-
-.post-header {
-  position: relative;
-  height: 248px;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 650px) {
-  .post-header {
-    height: fit-content;
-  }
-}
-
-.post-header__container {
-  padding: 24px 0 0 0;
-}
-
-@media screen and (max-width: 650px) {
-  .post-header__container {
-    padding: 16px 0 0 0;
-  }
-}
-
-.post-header__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('../images/piers-header.png');
-  background-position: center;
-  width: 100%;
-  height: 248px;
-  z-index: -1;
-}
-@media screen and (max-width: 650px) {
-  .post-header__image {
-    display: none;
-  }
-}
-.post-header__image::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, #005596 0%, rgba(0, 85, 150, 0) 100%);
-}
-
-.post-header__title {
-  font-family: 'IBMPlexSerif', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  text-rendering: optimizeLegibility;
-  text-decoration: none;
-  letter-spacing: 1.5px;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  text-transform: uppercase;
-  max-width: 500px;
-}
-@media screen and (max-width: 650px) {
-  .post-header__title {
-    font-size: 24px;
-    line-height: 32px;
-    color: #005596;
-  }
-}
-
-.post-header__back-and-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0 0 52px 0;
-}
-
-@media screen and (max-width: 650px) {
-  .post-header__back-and-form {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0 0 32px 0;
-  }
-}
-
-.post-header__link-back {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 165px;
-}
-
-@media screen and (max-width: 650px) {
-  .post-header__link-back {
-    margin: 0 0 16px 0;
-  }
-}
-.post-header__link-back-text {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 650px) {
-  .post-header__link-back-text {
-    color: #005596;
-  }
-}
-
-.post-header__form {
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 352px;
-}
-
-@media screen and (max-width: 650px) {
-  .post-header__form {
-    width: 100%;
-  }
-}
-
-.post-tags {
-  margin: 0 0 20px 0;
-}

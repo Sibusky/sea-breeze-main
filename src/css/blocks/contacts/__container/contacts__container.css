@@ -6,7 +6,7 @@
   align-items: flex-start;
   margin: 0;
   padding: 32px 0 40px 0;
-  width: calc((1120 / 1440) * 100%);
+  width: 1120px;
 }
 @media screen and (max-width: 1300px) {
     .contacts__container {
