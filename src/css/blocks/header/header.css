@@ -15,5 +15,8 @@
 @media screen and (max-width: 650px) {
   .header {
     height: 48px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 }
