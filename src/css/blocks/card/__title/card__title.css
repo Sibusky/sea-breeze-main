@@ -1,0 +1,6 @@
+.card__title {
+  max-width: 540px;
+  height: min-content;
+  margin: 0;
+  align-self: self-end;
+}

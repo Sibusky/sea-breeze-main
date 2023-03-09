@@ -1,0 +1,13 @@
+.card__img {
+  grid-row: 1 / 3;
+  width: 100%;
+  height: 404px;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+@media screen and (max-width: 650px) {
+    .card__img {
+        grid-row: 2 / 3;
+      }
+}

@@ -15,6 +15,7 @@ module.exports = {
     marinas: './src/js/marinas.js',
     outfit: './src/js/outfit.js',
     post: './src/js/post.js',
+    card: './src/js/card.js',
   },
   optimization: {
     splitChunks: {
@@ -122,6 +123,11 @@ module.exports = {
       filename: 'post.html',
       template: './src/pages/post.html',
       chunks: ['post'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'card.html',
+      template: './src/pages/card.html',
+      chunks: ['card'],
     }),
     new CleanWebpackPlugin(), // класс плагина для чистки dist
     new MiniCssExtractPlugin(), // подключение плагина для объединения файлов
