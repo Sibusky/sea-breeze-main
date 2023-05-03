@@ -38,6 +38,7 @@
 @import url(./blocks/piers-one/__title/piers-one__title.css);
 @import url(./blocks/piers-one/__intro-text/piers-one__intro-text.css);
 @import url(./blocks/section/__subtitle/section__subtitle.css);
+@import url(./blocks/piers/piers.css);
 @import url(./blocks/piers-photos/piers-photos.css);
 @import url(./blocks/piers-photos/__container/piers-photos__container.css);
 @import url(./blocks/piers-photos/__full-image/piers-photos__full-image.css);

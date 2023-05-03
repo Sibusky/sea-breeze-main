@@ -53,7 +53,6 @@ export class Carousel {
   }
 
   // Слушатель на открытие карточек
-
   _openPhotoInModal() {
     this._list.addEventListener('click', (e) => this._openModal(e));
   }
