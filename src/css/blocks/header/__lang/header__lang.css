@@ -5,9 +5,9 @@
   font-size: 14px;
   line-height: 16px;
   text-rendering: optimizeLegibility;
-  text-decoration: none;
+  text-decoration: underline;
   letter-spacing: 0;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #96d3ff;
 }
