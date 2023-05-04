@@ -9,7 +9,7 @@ export class Popup {
 
   open(image) {
     this._popup.classList.add('popup_opened');
-    this._image.src = image.src;
+    this._image.src = image.dataset.src;
     this._description.textContent = image.alt;
     this._popup.addEventListener('mousedown', (evt) =>
       this.closeFromOverlay(evt)
