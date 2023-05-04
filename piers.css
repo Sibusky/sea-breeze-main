@@ -116,71 +116,10 @@
     background: #FFFEF5;
   }
 }
-.section__text {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-rendering: optimizeLegibility;
-  text-decoration: none;
-  letter-spacing: 0;
-  margin: 0 0 8px 0;
-  padding: 0;
-  color: #333333;
-}
-
-.section__text:last-of-type {
-  margin: 0;
-}
-
-@media screen and (max-width: 650px) {
-  .section__text {
-    font-size: 14px;
-    line-height: 16px;
-    }
-}
-.section__title {
-  font-family: 'IBMPlexSerif', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  text-rendering: optimizeLegibility;
-  text-decoration: none;
-  letter-spacing: 1.5px;
-  margin: 0 0 24px 0;
-  padding: 0;
-  color: #005596;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 650px) {
-    .section__title {
-        font-size: 20px;
-        line-height: 24px;
-      }
-}
-.section__subtitle {
-  font-family: 'IBMPlexSerif', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  text-rendering: optimizeLegibility;
-  text-decoration: none;
-  letter-spacing: 1.5px;
-  margin: 8px 0;
-  padding: 0;
-  color: #005596;
-  text-transform: uppercase;
-}
 .piers {
     padding: 0;
     background-color: #FFFEF5;
 }
-.piers__title {
-    margin: 48px 0 24px 0;
-  }
 .piers-photos {
   height: 634px;
   margin: 0;
@@ -575,4 +514,4 @@
   background-image: url(f5987c7171690a053347.svg);
 }
 
-
+h2{font-family:"IBMPlexSerif",Arial,sans-serif;font-style:normal;font-weight:700;font-size:24px;line-height:32px;text-rendering:optimizeLegibility;text-decoration:none;letter-spacing:1.5px;margin:48px 0 24px 0;padding:0;color:#005596;text-transform:uppercase}@media screen and (max-width: 650px){h2{font-size:20px;line-height:24px}}h4{font-family:"IBMPlexSerif",Arial,sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:16px;text-rendering:optimizeLegibility;text-decoration:none;letter-spacing:1.5px;margin:8px 0;padding:0;color:#005596;text-transform:uppercase}p{font-family:"Roboto",Arial,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:24px;text-rendering:optimizeLegibility;text-decoration:none;letter-spacing:0;margin:0 0 8px 0;padding:0;color:#333}p:last-of-type{margin:0}@media screen and (max-width: 650px){p{font-size:14px;line-height:16px}}
