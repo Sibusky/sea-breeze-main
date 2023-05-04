@@ -1,10 +1,8 @@
 import '../css/post.css';
 import { Carousel } from './utils/carousel.js';
 
-// Карусель
+// Карусель с партнёрами
 const bottomSlider = new Carousel('carousel-bottom', 244);
-const postSlider = new Carousel('post-photos', 244);
-
 
 // Меню
 const menu = document.querySelector('.menu');
@@ -14,6 +12,7 @@ const menuCloseButton = document.querySelector('.menu__close-btn');
 const switchThumb = document.querySelector('.menu__lang-switch-front');
 const menuRuLang = document.querySelector('.menu__lang-ru');
 const menuEnLang = document.querySelector('.menu__lang-en');
+const sliders = document.querySelectorAll('.post-photos');
 
 //Карусель
 
@@ -21,10 +20,34 @@ bottomSlider._setEventListeners();
 bottomSlider._slideToNext();
 bottomSlider._slideToPrev();
 
-postSlider._setEventListeners();
-postSlider._openPhotoAbove();
-postSlider._slideToNext();
-postSlider._slideToPrev();
+// Слайдеры на странице
+// Добавляю стили для индексирования слайдеров
+sliders.forEach((slider, index) => {
+  const list = slider.querySelector('.post-photos__galery-list');
+  const item = slider.querySelectorAll('.post-photos__galery-item');
+  const fullImage = slider.querySelector('.post-photos__full-image');
+  const prevButton = slider.querySelector('.post-photos__btn-prev');
+  const nextButton = slider.querySelector('.post-photos__btn-next');
+  const classPrefix = `post-photos-${index}`;
+
+  slider.classList.add(classPrefix);
+  list.classList.add(`${classPrefix}__galery-list`);
+  item.forEach((item) => item.classList.add(`${classPrefix}__galery-item`));
+  fullImage.classList.add(`${classPrefix}__full-image`);
+  prevButton.classList.add(`${classPrefix}__btn-prev`);
+  nextButton.classList.add(`${classPrefix}__btn-next`);
+});
+
+// Создаю классы для каждого слайдера
+function createSlider(selector) {
+  const postSlider = new Carousel(selector, 244);
+  postSlider._setEventListeners();
+  postSlider._openPhotoAbove();
+  postSlider._slideToNext();
+  postSlider._slideToPrev();
+}
+
+sliders.forEach((slider, index) => createSlider(`post-photos-${index}`));
 
 // Меню
 
