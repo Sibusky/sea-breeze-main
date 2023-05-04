@@ -116,10 +116,6 @@
     background: #FFFEF5;
   }
 }
-.piers-one {
-  padding: 0;
-  background-color: #FFFEF5;
-}
 .section__text {
   font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
@@ -164,12 +160,6 @@
         line-height: 24px;
       }
 }
-.piers-one__title {
-  margin-bottom: 0;
-}
-.piers-one__intro-text {
-    margin: 0 0 32px 0;
-}
 .section__subtitle {
   font-family: 'IBMPlexSerif', Arial, sans-serif;
   font-style: normal;
@@ -184,6 +174,13 @@
   color: #005596;
   text-transform: uppercase;
 }
+.piers {
+    padding: 0;
+    background-color: #FFFEF5;
+}
+.piers__title {
+    margin: 48px 0 24px 0;
+  }
 .piers-photos {
   height: 634px;
   margin: 0;
@@ -250,23 +247,6 @@
 .piers-photo__btn-next {
   background-image: url(f555293b7e76a43a781c.svg);
   right: 0;
-}
-.piers-two__title {
-  margin: 48px 0 24px 0;
-}
-.piers-two {
-  padding: 0;
-  background-color: #FFFEF5;
-}
-.piers-three__title {
-  margin: 48px 0 24px 0;
-}
-.piers-three{
-  padding: 0;
-  background-color: #FFFEF5;
-}
-.piers-three__intro-text:last-of-type {
-    margin: 0 0 26px 0
 }
 .read-blog {
   margin: 0;
