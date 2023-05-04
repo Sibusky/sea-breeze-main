@@ -1,11 +1,8 @@
 import '../css/piers.css';
 import { Carousel } from './utils/carousel.js';
 
-// Карусель
+// Карусель с партнёрами
 const bottomSlider = new Carousel('carousel-bottom', 244);
-const piersSliderOne = new Carousel('piers-one-photos', 244);
-const piersSliderTwo = new Carousel('piers-two-photos', 244);
-const piersSliderThree = new Carousel('piers-three-photos', 244);
 
 // Меню
 const menu = document.querySelector('.menu');
@@ -15,27 +12,42 @@ const menuCloseButton = document.querySelector('.menu__close-btn');
 const switchThumb = document.querySelector('.menu__lang-switch-front');
 const menuRuLang = document.querySelector('.menu__lang-ru');
 const menuEnLang = document.querySelector('.menu__lang-en');
+const sliders = document.querySelectorAll('.piers-photos');
 
-//Карусель
+// Карусель с партнёрами
 
 bottomSlider._setEventListeners();
 bottomSlider._slideToNext();
 bottomSlider._slideToPrev();
 
-piersSliderOne._setEventListeners();
-piersSliderOne._openPhotoAbove();
-piersSliderOne._slideToNext();
-piersSliderOne._slideToPrev();
+// Слайдеры на странице
+// Добавляю стили для индексирования слайдеров
+sliders.forEach((slider, index) => {
+  const list = slider.querySelector('.piers-photos__galery-list');
+  const item = slider.querySelectorAll('.piers-photos__galery-item');
+  const fullImage = slider.querySelector('.piers-photos__full-image');
+  const prevButton = slider.querySelector('.piers-photos__btn-prev');
+  const nextButton = slider.querySelector('.piers-photos__btn-next');
+  const classPrefix = `piers-photos-${index}`;
 
-piersSliderTwo._setEventListeners();
-piersSliderTwo._openPhotoAbove();
-piersSliderTwo._slideToNext();
-piersSliderTwo._slideToPrev();
+  slider.classList.add(classPrefix);
+  list.classList.add(`${classPrefix}__galery-list`);
+  item.forEach((item) => item.classList.add(`${classPrefix}__galery-item`));
+  fullImage.classList.add(`${classPrefix}__full-image`);
+  prevButton.classList.add(`${classPrefix}__btn-prev`);
+  nextButton.classList.add(`${classPrefix}__btn-next`);
+});
 
-piersSliderThree._setEventListeners();
-piersSliderThree._openPhotoAbove();
-piersSliderThree._slideToNext();
-piersSliderThree._slideToPrev();
+// Создаю классы для каждого слайдера
+function createSlider(selector) {
+  const piersSlider = new Carousel(selector, 244);
+  piersSlider._setEventListeners();
+  piersSlider._openPhotoAbove();
+  piersSlider._slideToNext();
+  piersSlider._slideToPrev();
+}
+
+sliders.forEach((slider, index) => createSlider(`piers-photos-${index}`));
 
 // Меню
 

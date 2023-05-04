@@ -1,4 +1,9 @@
 .header__lang_active {
-  color: #96d3ff;
-  text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+}
+
+.header__lang_active:hover {
+  opacity: 1;
 }

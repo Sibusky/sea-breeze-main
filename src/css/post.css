@@ -37,10 +37,10 @@
 /* @import url(./blocks/search/__filter/_active/search__filter_active.css);
 @import url(./blocks/search/__filter/_large/search__filter_large.css); */
 
-@import url(./blocks/piers-one/piers-one.css);
-@import url(./blocks/section/__text/section__text.css);
-@import url(./blocks/section/__title/section__title.css);
-@import url(./blocks/section/__subtitle/section__subtitle.css);
+/* @import url(./blocks/piers-one/piers-one.css); */
+/* @import url(./blocks/section/__text/section__text.css); */
+/* @import url(./blocks/section/__title/section__title.css); */
+/* @import url(./blocks/section/__subtitle/section__subtitle.css); */
 @import url(./blocks/section/_color/section_color_light-yellow.css);
 
 @import url(./blocks/post-header/post-header.css);
@@ -133,3 +133,70 @@
 @import url(./blocks/menu/__youtube-link-large/menu__youtube-link-large.css);
 @import url(./blocks/menu/__youtube-logo-large/menu__youtube-logo-large.css);
 @import url(./blocks/menu/__copyright/menu__copyright.css);
+
+
+/* Заголовок */
+h2 {
+    font-family: 'IBMPlexSerif', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    margin: 48px 0 24px 0;
+    padding: 0;
+    color: #005596;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 650px) {
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  
+  /* Подзаголовок */
+  h4 {
+    font-family: 'IBMPlexSerif', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    margin: 8px 0;
+    padding: 0;
+    color: #005596;
+    text-transform: uppercase;
+  }
+  
+  /* Текст */
+  p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 0 0 8px 0;
+    padding: 0;
+    color: #333333;
+  }
+  
+  /* Стили для последнего параграфа текста в блоке */
+  p:last-of-type {
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 650px) {
+    p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }

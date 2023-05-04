@@ -53,7 +53,6 @@ export class Carousel {
   }
 
   // Слушатель на открытие карточек
-
   _openPhotoInModal() {
     this._list.addEventListener('click', (e) => this._openModal(e));
   }
@@ -70,7 +69,7 @@ export class Carousel {
 
   _showPhotoAbove(e) {
     const image = e.target.closest('li').querySelector('img');
-    this._photoAbove.src = image.src;
+    this._photoAbove.src = image.dataset.src;
     this._photoAbove.alt = image.alt;
   }
 
