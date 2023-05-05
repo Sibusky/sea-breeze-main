@@ -46,7 +46,7 @@
 @import url(./blocks/post-header/post-header.css);
 @import url(./blocks/post-header/__container/post-header__container.css);
 @import url(./blocks/post-header/__image/post-header__image.css);
-@import url(./blocks/post-header/__title/post-header__title.css);
+/* @import url(./blocks/post-header/__title/post-header__title.css); */
 @import url(./blocks/post-header/__back-and-form/post-header__back-and-form.css);
 @import url(./blocks/post-header/__link-back/post-header__link-back.css);
 @import url(./blocks/post-header/__link-back-text/post-header__link-back-text.css);
@@ -62,6 +62,10 @@
 @import url(./blocks/piers-photo/__btn/piers-photo__btn.css);
 @import url(./blocks/piers-photo/__btn-prev/piers-photo__btn-prev.css);
 @import url(./blocks/piers-photo/__btn-next/piers-photo__btn-next.css);
+
+@import url(blocks/card/__grid/card__grid.css);
+@import url(blocks/card/__img/card__img.css);
+/* @import url(blocks/card/__title/card__title.css); */
 
 @import url(./blocks/contactbox/contactbox.css);
 @import url(./blocks/contactbox/__container/contactbox__container.css);
@@ -134,69 +138,127 @@
 @import url(./blocks/menu/__youtube-logo-large/menu__youtube-logo-large.css);
 @import url(./blocks/menu/__copyright/menu__copyright.css);
 
-
-/* Заголовок */
-h2 {
-    font-family: 'IBMPlexSerif', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
+/* Заголовки */
+h1 {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 500px;
+}
+@media screen and (max-width: 650px) {
+  h1 {
     font-size: 24px;
     line-height: 32px;
-    text-rendering: optimizeLegibility;
-    text-decoration: none;
-    letter-spacing: 1.5px;
-    margin: 48px 0 24px 0;
-    padding: 0;
     color: #005596;
-    text-transform: uppercase;
   }
-  
-  @media screen and (max-width: 650px) {
-    h2 {
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-  
-  /* Подзаголовок */
-  h4 {
-    font-family: 'IBMPlexSerif', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    text-rendering: optimizeLegibility;
-    text-decoration: none;
-    letter-spacing: 1.5px;
-    margin: 8px 0;
-    padding: 0;
-    color: #005596;
-    text-transform: uppercase;
-  }
-  
-  /* Текст */
-  p {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+}
+
+h2 {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin: 48px 0 24px 0;
+  padding: 0;
+  color: #005596;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 20px;
     line-height: 24px;
-    text-rendering: optimizeLegibility;
-    text-decoration: none;
-    letter-spacing: 0;
-    margin: 0 0 8px 0;
-    padding: 0;
-    color: #333333;
   }
-  
-  /* Стили для последнего параграфа текста в блоке */
-  p:last-of-type {
-    margin: 0;
+}
+
+/* Подзаголовок */
+h4 {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin: 8px 0;
+  padding: 0;
+  color: #005596;
+  text-transform: uppercase;
+}
+
+/* Текст */
+p {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 8px 0;
+  padding: 0;
+  color: #333333;
+}
+
+/* Стили для последнего параграфа текста в блоке */
+p:last-of-type {
+  margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+  p {
+    font-size: 14px;
+    line-height: 16px;
   }
-  
-  @media screen and (max-width: 650px) {
-    p {
-      font-size: 14px;
-      line-height: 16px;
-    }
+}
+
+.card__container h2 {
+  margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .card__container h2 {
+    margin: 0 0 24px 0;
   }
+}
+
+/* Стили для списка */
+ul {
+  margin: 16px 0 0 0;
+  padding: 0 0 0 40px;
+}
+
+/* Стили для элементов списка */
+li {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 8px 0;
+  padding: 0;
+  color: #333333;
+}
+
+/* Стили для последнего элемента в списке */
+li:last-of-type {
+  margin: 0;
+}

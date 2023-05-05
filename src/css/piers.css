@@ -52,6 +52,13 @@
 @import url(./blocks/grid/__img/grid__img.css);
 @import url(./blocks/grid/__card-title/grid__card-title.css);
 
+/* @import url(blocks/card/card.css); */
+/* @import url(blocks/card/__container/card__container.css); */
+@import url(blocks/card/__grid/card__grid.css);
+@import url(blocks/card/__img/card__img.css);
+/* @import url(blocks/card/__title/card__title.css); */
+/* @import url(blocks/card/__list-text/card__list-text.css); */
+
 @import url(./blocks/contactbox/contactbox.css);
 @import url(./blocks/contactbox/__container/contactbox__container.css);
 @import url(./blocks/contactbox/__title/contactbox__title.css);
@@ -123,7 +130,30 @@
 @import url(./blocks/menu/__youtube-logo-large/menu__youtube-logo-large.css);
 @import url(./blocks/menu/__copyright/menu__copyright.css);
 
-/* Заголовок */
+/* Заголовки */
+h1 {
+  font-family: 'IBMPlexSerif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 500px;
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #005596;
+  }
+}
+
 h2 {
   font-family: 'IBMPlexSerif', Arial, sans-serif;
   font-style: normal;
@@ -187,4 +217,40 @@ p:last-of-type {
     font-size: 14px;
     line-height: 16px;
   }
+}
+
+.card__container h2 {
+  margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .card__container h2 {
+    margin: 0 0 24px 0;
+  }
+}
+
+/* Стили для списка */
+ul {
+  margin: 16px 0 0 0;
+  padding: 0 0 0 40px;
+}
+
+/* Стили для элементов списка */
+li {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 8px 0;
+  padding: 0;
+  color: #333333;
+}
+
+/* Стили для последнего элемента в списке */
+li:last-of-type {
+  margin: 0;
 }

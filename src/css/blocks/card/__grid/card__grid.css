@@ -1,8 +1,8 @@
 .card__grid {
   display: grid;
   grid-template-columns: calc((352 / 1120) * 100%) auto;
-  grid-template-rows: 88px max-content;
-  row-gap: 24px;
+  grid-template-rows: auto max-content;
+  /* row-gap: 24px; */
   column-gap: 32px;
 }
 @media screen and (max-width: 650px) {
