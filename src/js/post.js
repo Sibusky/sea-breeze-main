@@ -45,6 +45,7 @@ function createSlider(selector) {
   postSlider._openPhotoAbove();
   postSlider._slideToNext();
   postSlider._slideToPrev();
+  postSlider._initialRender();
 }
 
 sliders.forEach((slider, index) => createSlider(`post-photos-${index}`));

@@ -45,6 +45,7 @@ function createSlider(selector) {
   piersSlider._openPhotoAbove();
   piersSlider._slideToNext();
   piersSlider._slideToPrev();
+  piersSlider._initialRender();
 }
 
 sliders.forEach((slider, index) => createSlider(`piers-photos-${index}`));

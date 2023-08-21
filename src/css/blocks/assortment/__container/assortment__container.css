@@ -4,7 +4,7 @@
   grid-auto-rows: 168px;
   gap: 32px;
   align-items: center;
-  width: calc((1120 / 1440) * 100%);
+  width: 1120px;
   list-style: none;
   margin: 40px 0 0 0;
   padding: 0;

@@ -1,0 +1,22 @@
+.read-blog__grid {
+  grid-template-columns: repeat(4, 1fr) !important;
+  grid-auto-rows: 300px !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .read-blog__grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .read-blog__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .read-blog__grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

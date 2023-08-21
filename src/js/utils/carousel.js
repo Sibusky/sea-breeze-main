@@ -31,6 +31,42 @@ export class Carousel {
         return 1;
       }
     };
+    this._hideButtons = () => {
+      this._prevButton.style.display = 'none';
+      this._nextButton.style.display = 'none';
+    };
+    this._justifyContent = () => {
+      this._list.style.width = '100%';
+      this._list.style.justifyContent = 'center';
+    };
+  }
+
+  // Первоначальная загрузка картинок, учитываю, что одной картинки в галерее быть не может
+  _initialRender() {
+    if (window.innerWidth > 1050) {
+      if (this._listElems.length === 4) {
+        this._hideButtons();
+      }
+      if (this._listElems.length === 3 || this._listElems.length === 2) {
+        this._hideButtons();
+        this._justifyContent();
+      }
+    }
+    if (window.innerWidth <= 1050 && window.innerWidth > 750) {
+      if (this._listElems.length === 3) {
+        this._hideButtons();
+      }
+      if (this._listElems.length === 2) {
+        this._hideButtons();
+        this._justifyContent();
+      }
+    }
+    if (window.innerWidth <= 750 && window.innerWidth > 530) {
+      if (this._listElems.length === 2) {
+        this._hideButtons();
+        this._justifyContent();
+      }
+    }
   }
 
   // этот метод помечает картинки, для удобства разработки в карусели

@@ -19,21 +19,6 @@ bottomSlider._setEventListeners();
 bottomSlider._slideToNext();
 bottomSlider._slideToPrev();
 
-// автоматическая прокрутка
-// function autoSlide() {
-//   if (position === -width * (listElems.length - count(window.innerWidth))) {
-//     position = width * count(window.innerWidth);
-//   }
-//   position -= width * count(window.innerWidth);
-//   position = Math.max(
-//     position,
-//     -width * (listElems.length - count(window.innerWidth))
-//   );
-//   list.style.marginLeft = position + 'px';
-// }
-
-// setInterval(autoSlide, 6000);
-
 // Меню
 
 function openMenu() {

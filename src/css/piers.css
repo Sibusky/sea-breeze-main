@@ -45,7 +45,9 @@
 @import url(./blocks/piers-photo/__btn-prev/piers-photo__btn-prev.css);
 @import url(./blocks/piers-photo/__btn-next/piers-photo__btn-next.css);
 @import url(./blocks/read-blog/read-blog.css);
+@import url(./blocks/read-blog/__grid/read-blog__grid.css);
 @import url(./blocks/read-blog/__title/read-blog__title.css);
+@import url(./blocks/read-blog/__img/read-blog__img.css);
 @import url(./blocks/grid/grid.css);
 @import url(./blocks/grid/__card/grid__card.css);
 @import url(./blocks/grid/__card-link/grid__card-link.css);
